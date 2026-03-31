@@ -1,22 +1,5 @@
 .html, body {
-    background-color: rgb(165, 99, 42);
+    background-color:rgb(0, 183, 255);
 }
 
-.test {
-    color: cyan;
-    text-align: center;
-    weight: 10;
-}
-
-.blu{
-    color: blue;
-}
-.ng {
-    width: 500px;
-    height: auto;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
