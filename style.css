@@ -1,5 +1,36 @@
 .html, body {
     background-color:rgb(255, 255, 255);
+    margin: 0;
 }
 
+.layout {
+    margin: 0 auto;
+}
 
+.topbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+
+}
+
+/* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
