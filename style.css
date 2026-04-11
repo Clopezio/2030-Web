@@ -1,5 +1,5 @@
 .html, body {
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(65, 65, 65);
     margin: 0;
 }
 
@@ -12,10 +12,7 @@
     top: 0;
     display: flex;
     align-items: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; 
 }
  
 .topbar-left {
@@ -30,6 +27,29 @@
 
 }
 
+.hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    flex-direction: column;  
+}
+
+.worldcontainer {
+    position: fixed;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
 /* display: flex;
   justify-content: center;
   align-items: center;
