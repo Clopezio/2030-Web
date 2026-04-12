@@ -36,4 +36,4 @@ _Ringraziamenti a chi ha lavorato sul progetto_
 
 ## Licenza
 
-Questo progetto è ad uso scolastico e non commerciale.
+Questo progetto ha scopo didattico, segue la licenza MIT.
