@@ -1,5 +1,5 @@
 .html, body {
-    background-color:rgb(65, 65, 65);
+    background-color:rgb(255, 255, 255);
     margin: 0;
 }
 
@@ -50,6 +50,7 @@
     align-items: center;
     flex-direction: column;  
 }
+
 /* display: flex;
   justify-content: center;
   align-items: center;
