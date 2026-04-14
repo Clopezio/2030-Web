@@ -7,6 +7,8 @@
     margin: 0 auto;
 }
 
+/* Barra superiore */
+
 .topbar {
     position: sticky;
     top: 0;
@@ -26,6 +28,8 @@
     gap: 20px;
 
 }
+
+/* Struttura centrale */
 
 .hero {
     display: flex;
