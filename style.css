@@ -1,22 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     background-color: white;
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
 
-.world-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('world.png');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-}
 
 .layout {
     margin: 0 auto;
@@ -37,7 +30,7 @@ html, body {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 .navbar {
@@ -45,7 +38,12 @@ html, body {
     gap: 20px;
     font-size: 16px;
     margin-right: 246px;
-    margin-top: 5px;
+    margin-top: 0;
+}
+
+.main-content {
+    margin: 0;
+    padding: 0;
 }
 
 .navbar a {
@@ -72,13 +70,15 @@ html, body {
 }
 
 .hero {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 550px;
     text-align: center;
-    color: white;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .cards {
@@ -101,8 +101,8 @@ html, body {
 }
 
 .worldcontainer img {
-   margin-top: -190px;
-   width: 100%;
-   height: auto;
-   display: block;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    display: block;
 }
