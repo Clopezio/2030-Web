@@ -1,27 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-.html, body {
-    background-color:rgb(255, 255, 255);
+
+html, body {
+    background-color: white;
     margin: 0;
     font-family: 'Inter', sans-serif;
+}
 
+.world-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('world.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
 .layout {
     margin: 0 auto;
 }
 
-/* Barra superiore */
-
+/* TOPBAR */
 .topbar {
     position: sticky;
     top: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    z-index: 1;
+    justify-content: space-between;
+    z-index: 10;
     background-color: white;
 }
- 
+
 .topbar-left {
     display: flex;
     align-items: center;
@@ -42,17 +53,32 @@
     color: inherit;
 }
 
-/* Struttura centrale */
+.logocontainer img {
+    width: 59px;
+    height: auto;
+    margin-left: 196px;
+}
+
+.navbar1 {
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.navbar2 {
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: -8px;
+}
 
 .hero {
     display: flex;
-    justify-content: center; 
-    align-items: center;   
-    flex-direction: column;  
-}
-
-.worldcontainer {
-    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 550px;
+    text-align: center;
+    color: white;
 }
 
 .cards {
@@ -65,36 +91,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
-.logocontainer img {
-    width: 59px;
-    height: auto;
-    margin-left: 196px;
+.textcrazy {
+    color: black;
+    margin-top: -500px;
+    z-index: 1;
 }
 
-.navbar1 {
-    font-size: 15px;
-    font-weight: bold;
+.worldcontainer img {
+   margin-top: -190px;
+   width: 100%;
+   height: auto;
+   display: block;
 }
-
-.navbar2 {
-    font-size: 10px;
-    font-weight: normal;
-    margin-top: -8px;
-}
-
-.worldcontainer {
-  margin-top: 220px;
-  background-image: url('world.png');
-  z-index: -1;
-  position: absolute;
-}
-
-
-/* display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  
