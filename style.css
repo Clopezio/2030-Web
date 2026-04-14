@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 .html, body {
     background-color:rgb(255, 255, 255);
     margin: 0;
+    font-family: 'Inter', sans-serif;
+
 }
 
 .layout {
@@ -15,18 +18,28 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    z-index: 1;
+    background-color: white;
 }
  
 .topbar-left {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 5px;
 }
 
 .navbar {
     display: flex;
     gap: 20px;
+    font-size: 16px;
+    margin-right: 246px;
+    margin-top: 5px;
+}
 
+.navbar a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Struttura centrale */
@@ -55,7 +68,33 @@
     flex-direction: column;  
 }
 
+.logocontainer img {
+    width: 59px;
+    height: auto;
+    margin-left: 196px;
+}
+
+.navbar1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar2 {
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: -8px;
+}
+
+.worldcontainer {
+  margin-top: 220px;
+  background-image: url('world.png');
+  z-index: -1;
+  position: absolute;
+}
+
+
 /* display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; 
+  
