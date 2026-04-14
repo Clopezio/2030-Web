@@ -35,9 +35,9 @@ html, body {
 
 .navbar {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     font-size: 16px;
-    margin-right: 246px;
+    margin-right: 350px;
     margin-top: 0;
 }
 
@@ -54,7 +54,7 @@ html, body {
 .logocontainer img {
     width: 59px;
     height: auto;
-    margin-left: 196px;
+    margin-left: 350px;
 }
 
 .navbar1 {
@@ -80,11 +80,17 @@ html, body {
     margin-top: 0;
     padding-top: 0;
 }
-
+.worldcontainer img {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
 .cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 300px;
 }
 
 .goals {
@@ -95,14 +101,84 @@ html, body {
 }
 
 .textcrazy {
-    color: black;
+    color: rgb(255, 255, 255);
     margin-top: -500px;
     z-index: 1;
 }
 
-.worldcontainer img {
-    margin-top: 0;
-    width: 100%;
-    height: auto;
-    display: block;
+.text1 {
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+.text2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+.text3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.button {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.9rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.9rem 1.8rem;
+    padding-left: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform: translateY(10px);
+    transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.button__icon-svg {
+    width: 12px;
+    height: 12px;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button:hover .button__icon-wrapper {
+    color: #000;
+}
+
+.button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
 }
