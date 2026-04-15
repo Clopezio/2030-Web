@@ -1,3 +1,4 @@
+/* #region CSS Head */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
@@ -5,7 +6,7 @@
 }
 
 html, body {
-    background-color: white;
+    background-color: var(--color-white);
     margin: 0;
     font-family: 'Inter', sans-serif;
 }
@@ -14,8 +15,18 @@ html, body {
 .layout {
     margin: 0 auto;
 }
+/* #endregion */
 
-/* TOPBAR */
+/* #region Variabili */
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-background: #ffffff;
+    --color-text-light: #ffffff;
+}
+/* #endregion */
+
+/* #region Topbar */
 .topbar {
     position: sticky;
     top: 0;
@@ -23,7 +34,7 @@ html, body {
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    background-color: white;
+    background-color: var(--color-white);
 }
 
 .topbar-left {
@@ -31,6 +42,9 @@ html, body {
     align-items: center;
     gap: 10px;
     margin-top: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .navbar {
@@ -41,20 +55,9 @@ html, body {
     margin-top: 0;
 }
 
-.main-content {
-    margin: 0;
-    padding: 0;
-}
-
 .navbar a {
     text-decoration: none;
     color: inherit;
-}
-
-.logocontainer img {
-    width: 59px;
-    height: auto;
-    margin-left: 350px;
 }
 
 .navbar1 {
@@ -67,6 +70,20 @@ html, body {
     font-size: 10px;
     font-weight: normal;
     margin-top: -8px;
+}
+
+/* #endregion */
+
+/* #region Main Hero */
+.main-content {
+    margin: 0;
+    padding: 0;
+}
+
+.logocontainer img {
+    width: 59px;
+    height: auto;
+    margin-left: 350px;
 }
 
 .hero {
@@ -101,7 +118,7 @@ html, body {
 }
 
 .textcrazy {
-    color: rgb(255, 255, 255);
+    color: var(--color-text-light);
     margin-top: -500px;
     z-index: 1;
 }
@@ -119,7 +136,9 @@ html, body {
     font-size: 20px;
     font-weight: normal;
 }
+/* #endregion */
 
+/* #region Button */
 .button {
     line-height: 1;
     text-decoration: none;
@@ -129,7 +148,7 @@ html, body {
     align-items: center;
     gap: 0.9rem;
     background-color: var(--clr);
-    color: #fff;
+    color: var(--color-white);
     border-radius: 10rem;
     font-weight: 600;
     font-size: 1.2rem;
@@ -148,7 +167,7 @@ html, body {
     height: 30px;
     position: relative;
     color: var(--clr);
-    background-color: #fff;
+    background-color: var(--color-white);
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -161,11 +180,11 @@ html, body {
 }
 
 .button:hover {
-    background-color: #000;
+    background-color: var(--color-black);
 }
 
 .button:hover .button__icon-wrapper {
-    color: #000;
+    color: var(--color-black);
 }
 
 .button__icon-svg--copy {
@@ -182,3 +201,4 @@ html, body {
     transition: transform 0.3s ease-in-out 0.1s;
     transform: translate(0);
 }
+/* #endregion */
