@@ -209,7 +209,7 @@ html, body {
     justify-content: center;
     align-items: center;
     padding: 40px;
-    margin-top: 300px;
+    margin-top: 210px;
     width: 100%;
     gap: 50px;
 }
@@ -234,5 +234,10 @@ html, body {
 }
 .card-subtext {
     color: rgb(67, 67, 67);
+}
+
+hr {
+    width: 90%;
+    margin-top: 35px;
 }
 /* endregion */
