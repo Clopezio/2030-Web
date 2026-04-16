@@ -10,12 +10,12 @@
 
 <body>
 
-<div class="layout">
+<div class="layout" id="top">
 
     <!-- TOPBAR -->
     <header class="topbar">
 
-        <div class="topbar-left">
+        <a href="#top" class="topbar-left">
             <div class="logocontainer">
                 <img src="logo.png" alt="logo">
             </div>
@@ -24,7 +24,7 @@
                 <h1 class="navbar1">Agenda 2030</h1>
                 <h2 class="navbar2">Sustainable development goals</h2>
             </div>    
-        </div>
+        </a>
 
         <nav class="navbar">
             <a href="#">Home</a>
@@ -44,12 +44,41 @@
             <img class="world" src="world.png" alt="world">
         </div>
         <div class="textcrazy">
-        <h1>Transforming our world</h1>
-        <h2>The 2030 Agenda for Sustainable Development</h2>
-        <h3>A shared blueprint for peace and prosperity for people and the planet, now and into the future.</h3>
-        </div>
-            <!-- BUTTON -->
-            <p>Explore 17 Goals</p>
+        <h1 class="text1">Transforming our world</h1>
+        <h2 class="text2">The 2030 Agenda for Sustainable Development</h2>
+        <h3 class="text3">A shared blueprint for peace and prosperity for people and the planet, now and <br>into the future.</h3>
+
+                <!-- BUTTON (preso da UIVERSE) -->
+                        <button class="button" type="button" style="--clr: #7808d0">
+                            <span class="button__icon-wrapper">
+                                <svg
+                                    viewBox="0 0 14 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="button__icon-svg"
+                                    width="10"
+                                >
+                                    <path
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                        fill="currentColor"
+                                    ></path>
+                                </svg>
+
+                                <svg
+                                    viewBox="0 0 14 15"
+                                    fill="none"
+                                    width="10"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="button__icon-svg button__icon-svg--copy"
+                                >
+                                    <path
+                                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                        fill="currentColor"
+                                    ></path>
+                                </svg>
+                            </span>
+                            Explore 17 Goals
+                        </button>
         </div>
         
         <!-- CARDS -->
