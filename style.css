@@ -35,6 +35,7 @@ html, body {
     justify-content: space-between;
     z-index: 10;
     background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .topbar-left {
@@ -103,13 +104,6 @@ html, body {
     height: auto;
     display: block;
 }
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 300px;
-}
-
 .goals {
     display: flex;
     justify-content: center;
@@ -248,4 +242,57 @@ hr {
     width: 90%;
     margin-top: 35px;
 }
-/* endregion */
+/* #endregion */
+
+/* #region Informative Section  */
+.explanation {
+    margin-left: 350px;
+}
+.info-header {
+    font-size: 40px;
+    font-weight: normal;
+    text-align: left;
+}
+.info-text {
+    font-size: 20px;
+    color: rgb(67, 67, 67);
+    text-align: left;
+    line-height: 1.5;
+}
+
+.button1 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  background: rgb(164, 46, 194);
+  color: #fff;
+  cursor: pointer;
+}
+
+.button1-text {
+  transform: translateX(15px);
+  font-size: 1.5em;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.iconer1 {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.button1:hover .button1-text {
+  transform: translateX(0px);
+}
+
+.button1:hover .iconer1 {
+  transform: translateY(0px);
+}
+
+
+/* #endregion */
