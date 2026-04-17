@@ -203,7 +203,7 @@ html, body {
 }
 /* #endregion */
 
-/* #region cards */
+/* #region Cards */
 .cards {
     display: flex;
     justify-content: center;
@@ -234,6 +234,14 @@ html, body {
 }
 .card-subtext {
     color: rgb(67, 67, 67);
+    transform: translateY(-40px);
+}
+
+.card-img {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(20px);
 }
 
 hr {
