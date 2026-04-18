@@ -322,6 +322,101 @@ hr {
 
 /* #region Featured Goals  */
 
+.goals-header {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+}
 
+.goals-paragraph {
+    font-size: 18px;
+    color: rgb(67, 67, 67);
+    text-align: center;
+    line-height: 1.5;
+    transform: translateY(-20px);
+}
+
+/* From Uiverse.io by alexmaracinaru */ 
+.card2 {
+  width: 290px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);  
+}
+.card2-box {
+    display: flex;
+
+    gap: 160px;
+}
+
+.card-image2 {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image2:hover {
+  transform: scale(0.98);
+}
+
+.category2 {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category2:hover {
+  cursor: pointer;
+}
+
+.heading2 {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading2:hover {
+  cursor: pointer;
+}
+
+
+.button2 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  overflow: hidden;
+  background: rgb(164, 46, 194);
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(50px);
+}
+
+.button2-text {
+  transform: translateX(15px);
+  font-size: 1.5em;
+  font-weight: 700;
+  transition-duration: 0.3s;
+}
+
+.iconer2 {
+  transform: translateY(35px);
+  transition-duration: 0.3s;
+}
+
+.button2:hover .button2-text {
+  transform: translateX(0px);
+}
+
+.button2:hover .iconer2 {
+  transform: translateY(0px);
+}
 
 /* #endregion */
