@@ -1,0 +1,136 @@
+/* #region CSS Head */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--color-white);
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.layout {
+    margin: 0 auto;
+}
+
+hr {
+    width: 90%;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+/* #endregion */
+
+/* #region Variabili */
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-background: #ffffff;
+    --color-text-light: #696969;
+}
+/* #endregion */
+
+/* #region Topbar */
+.topbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+    font-size: 16px;
+    margin-right: 350px;
+    margin-top: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar1 {
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.navbar2 {
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: -8px;
+}
+
+.logocontainer img {
+    width: 59px;
+    height: auto;
+    margin-left: 350px;
+}
+
+/* #endregion */
+
+/* #region Main */
+
+
+.goals-header {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.goals-paragraph {
+    text-align: center;
+    font-size: 22px;
+    color: var(--color-text-light);
+}
+
+/* #endregion  */
+
+/* #region Cards */
+
+/* #endregion */
+
+/* #region Bottom */
+
+.bottom-container {
+    background-color: #e3f2fd;
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.bottom-header {
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+}
+.bottom-paragraph {
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-text-light);
+}
+
+/* #endregion */
+
+
