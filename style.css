@@ -15,6 +15,13 @@ html, body {
 .layout {
     margin: 0 auto;
 }
+
+hr {
+    width: 90%;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
 /* #endregion */
 
 /* #region Variabili */
@@ -238,10 +245,6 @@ html, body {
     transform: translateY(20px);
 }
 
-hr {
-    width: 90%;
-    margin-top: 35px;
-}
 /* #endregion */
 
 /* #region Informative Section  */
@@ -342,7 +345,7 @@ hr {
   background: white;
   padding: .4em;
   border-radius: 6px;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);  
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 .card2-box {
     display: flex;
