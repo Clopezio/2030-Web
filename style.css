@@ -246,18 +246,23 @@ hr {
 
 /* #region Informative Section  */
 .explanation {
-    margin-left: 350px;
+    margin-left: auto;
+    display: flex;
+    align-items: flex-start;
+        
 }
 .info-header {
     font-size: 40px;
     font-weight: normal;
     text-align: left;
+    margin-left: 350px;
 }
 .info-text {
-    font-size: 20px;
+    font-size: 18px;
     color: rgb(67, 67, 67);
     text-align: left;
     line-height: 1.5;
+    margin-left: 350px;
 }
 
 .button1 {
@@ -272,6 +277,7 @@ hr {
   background: rgb(164, 46, 194);
   color: #fff;
   cursor: pointer;
+  margin-left: 350px;
 }
 
 .button1-text {
@@ -293,6 +299,29 @@ hr {
 .button1:hover .iconer1 {
   transform: translateY(0px);
 }
+
+.info-img-container {    
+    margin-left: auto;
+}
+
+.info-img {
+    border-radius: 10px;
+    width: 270px;
+    height: 220px;
+    object-fit: cover;
+    margin-top: 20px;
+    
+}
+
+.info-img2, .info-img4 {
+    margin-right: 350px;
+    margin-left: 10px;
+    transform: translateY(20px);
+}
+/* #endregion */
+
+/* #region Featured Goals  */
+
 
 
 /* #endregion */
