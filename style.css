@@ -400,6 +400,7 @@ hr {
   color: #fff;
   cursor: pointer;
   transform: translateY(50px);
+  text-decoration: none;
 }
 
 .button2-text {
@@ -407,6 +408,7 @@ hr {
   font-size: 1.5em;
   font-weight: 700;
   transition-duration: 0.3s;
+  text-decoration: none;
 }
 
 .iconer2 {
@@ -422,4 +424,7 @@ hr {
   transform: translateY(0px);
 }
 
+.button-link {
+    text-decoration: none;
+}
 /* #endregion */
