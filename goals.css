@@ -90,23 +90,80 @@ hr {
 
 /* #region Main */
 
-
 .goals-header {
     text-align: center;
     margin-top: 50px;
     font-size: 50px;
     font-weight: normal;
+    color: var(--color-white);
 }
 
 .goals-paragraph {
     text-align: center;
-    font-size: 22px;
-    color: var(--color-text-light);
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.goals-box {
+    height: 500px;
+    background: linear-gradient(135deg, #0183d4 0%, #12b42b 100%);
+}
+
+.goals-img {
+    transform: translateY(50px);
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+    filter: brightness(0) invert(1);
 }
 
 /* #endregion  */
 
 /* #region Cards */
+
+.card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.goals-number {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--num-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    transform: translateX(20px);
+}
+.card-subtext {
+    color: rgb(67, 67, 67);
+    transform: translateX(20px) translateY(-10px);
+}
+.goals-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    justify-content: center;
+    padding: 40px 0;
+    gap: 20px;
+}
 
 /* #endregion */
 
