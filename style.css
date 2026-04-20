@@ -428,3 +428,68 @@ hr {
     text-decoration: none;
 }
 /* #endregion */
+
+/* #region footer */
+.footer {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 48px 24px 32px;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin-top: 200px;
+}
+
+.footer-content {
+  max-width: calc(100% - 700px);
+  margin: 0 auto;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-heading {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  color: #60a5fa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 24px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  width: 33px;
+  height: auto;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  margin: 0;
+  color: lightgray;
+}
+/* #endregion */
