@@ -169,9 +169,14 @@ hr {
 
 /* #region Bottom */
 
+.bottom-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
 .bottom-container {
-    background-color: #e3f2fd;
-    width: 800px;
+    background: linear-gradient(135deg, #cdecff 0%, #cbffd3 100%);
+    width: calc(100% - 700px);
     height: 200px;
     margin: 0 auto;
     margin-top: 50px;
@@ -181,11 +186,13 @@ hr {
     font-weight: normal;
     text-align: center;
     font-size: 30px;
+    transform: translateY(30px);
 }
 .bottom-paragraph {
     text-align: center;
     font-size: 18px;
     color: var(--color-text-light);
+    transform: translateY(20px);
 }
 
 /* #endregion */
