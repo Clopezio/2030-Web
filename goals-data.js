@@ -377,7 +377,27 @@ const GOALS_DATA = [
       "People with disabilities are twice as likely to be unemployed.",
       "Migrants send over $700 billion in remittances to developing countries each year."
     ],
-    progress: "Between 2011 and 2019, the incomes of the bottom 40% grew faster than the national average in about half of the countries with available data — a positive signal. International remittances and improved social protection systems have provided meaningful support to vulnerable populations. Yet the COVID-19 pandemic sharply reversed much of this progress: the richest 1% captured nearly twice as much new wealth as the rest of the world combined between 2020 and 2022. Tackling inequality requires bold fiscal policies, fair trade rules, and strong anti-discrimination frameworks."
+    progress: {
+      overview: "Income inequality within countries was beginning to narrow before 2020, but the pandemic supercharged wealth concentration at the top and hollowed out gains for lower-income groups. SDG 10 is the goal furthest from being achieved — inequality between and within nations is worse today than in 2015.",
+      accomplishments: [
+        "In about half of countries with data, the bottom 40% saw income grow faster than the national average between 2011 and 2019.",
+        "International remittances hit a record $860 billion in 2023, providing crucial income support to poorer households.",
+        "Nordic countries achieved and maintained some of the world's lowest Gini coefficients through progressive tax and transfer systems.",
+        "Social protection reforms in Mexico, Argentina, and Brazil reduced extreme inequality during the 2000s and 2010s.",
+        "Anti-discrimination laws and disability inclusion policies expanded in over 100 countries since 2000."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "The richest 1% captured nearly twice as much new global wealth as the remaining 99% between 2020 and 2022. No region is on track to halve the income share of the lowest 40% relative to the national average. The UN's 2023 SDG report rated SDG 10 as showing 'no progress or regression' — the starkest possible assessment. Without major redistribution via progressive taxation, social transfers, and fairer trade rules, this goal will not be met."
+      },
+      leaders: [
+        { name: "Denmark", detail: "World's lowest Gini coefficient; universal welfare system, free healthcare, and generous unemployment protection." },
+        { name: "Slovenia", detail: "Among Europe's most equal societies; strong public services and narrow wage gap across sectors." },
+        { name: "Norway", detail: "Near-universal social protection; one of the most equal income distributions among OECD members." },
+        { name: "Czech Republic", detail: "Consistently among the most equal EU nations in household income; low poverty rate relative to peers." },
+        { name: "Finland", detail: "Progressive tax system and comprehensive welfare state; child poverty among the lowest in the world." }
+      ]
+    }
   },
   {
     id: 11,
@@ -397,7 +417,27 @@ const GOALS_DATA = [
       "More than 1 billion people still live in informal settlements and slums.",
       "Cities consume 78% of the world's energy and produce more than 60% of greenhouse gas emissions."
     ],
-    progress: "Urban access to improved water, sanitation, and basic services has improved across many cities. The proportion of urban residents living in slums fell from 30% to 24% globally between 2000 and 2020, though the absolute number has grown as cities expand. Many cities are now adopting climate resilience plans and investing in public transport. However, rapid urbanisation in Africa and Asia means the absolute scale of the housing and infrastructure challenge continues to grow faster than solutions are being deployed."
+    progress: {
+      overview: "Cities are growing faster than at any point in human history — by 2050, 7 in 10 people will live in urban areas. Significant strides have been made in urban services and infrastructure, but affordable housing, informal settlements, and climate resilience gaps are widening as fast urbanisation outpaces investment.",
+      accomplishments: [
+        "The proportion of urban residents living in slums fell from 30% in 2000 to 24% by 2020.",
+        "Public transit ridership and coverage expanded significantly in cities across Asia, Latin America, and Europe.",
+        "Singapore became a global model of planned, green, and liveable high-density urbanism.",
+        "Over 10,000 cities have adopted disaster risk reduction strategies under the Sendai Framework.",
+        "Curitiba, Brazil pioneered bus rapid transit systems replicated in over 200 cities worldwide."
+      ],
+      outlook: {
+        status: "At Risk",
+        text: "While the slum percentage has dropped, the absolute number of slum dwellers has risen as cities grow — over 1 billion people still live in informal settlements. In sub-Saharan Africa, the urban slum population is projected to double by 2030. Affordable housing is a worsening crisis in both developing and developed world cities. Climate adaptation for cities requires investment that most municipalities lack the resources to fund independently."
+      },
+      leaders: [
+        { name: "Singapore", detail: "World's most liveable and efficient city-state; 80%+ public housing ownership, near-zero urban poverty." },
+        { name: "Japan", detail: "Tokyo, Osaka, and other cities rank highest globally for safety, transit quality, and disaster preparedness." },
+        { name: "Netherlands", detail: "World leader in cycling infrastructure, flood-resilient urban planning, and sustainable city design." },
+        { name: "Denmark", detail: "Copenhagen is the world's most bike-friendly city and leads in carbon-neutral urban planning." },
+        { name: "Germany", detail: "Comprehensive urban renewal and social housing policies; strong public transit and heritage protection." }
+      ]
+    }
   },
   {
     id: 12,
@@ -417,7 +457,27 @@ const GOALS_DATA = [
       "Only 9% of the world's plastic has ever been recycled.",
       "The fashion industry produces 10% of global carbon emissions."
     ],
-    progress: "Dozens of countries have adopted national action plans on sustainable consumption and production, and corporate sustainability reporting has expanded significantly. The circular economy is gaining traction in Europe and parts of Asia, with policies promoting product repair, reuse, and recycling. However, global material footprints remain well above sustainable levels, food waste targets have not been met, and single-use plastic pollution continues to grow. Shifting consumption patterns will require both strong regulations and changes in individual behaviour."
+    progress: {
+      overview: "The world has made some progress toward sustainable consumption, but global material use has doubled since 1990 and is still rising. Circular economy models and corporate sustainability reporting are spreading, but consumer behaviour and production volumes remain far outside planetary boundaries.",
+      accomplishments: [
+        "Over 70 countries adopted National Programmes of Action on Sustainable Consumption and Production.",
+        "The circular economy grew rapidly in Europe — EU waste recycling rates rose from 37% to 48% between 2000 and 2022.",
+        "Over 10,000 companies now report sustainability data through the Global Reporting Initiative.",
+        "Sweden leads with a 'repair revolution' — reduced VAT on repairs and second-hand goods to cut waste.",
+        "Food waste reduction became law in France in 2016, banning supermarkets from throwing away unsold food."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "Global material footprints are 60% above sustainable levels and rising. Food waste targets have not been met: 1.3 billion tonnes are still wasted annually. Only 8.6% of the global economy is circular — meaning over 91% of materials used are still wasted or destroyed. Single-use plastic production has quadrupled since 1980 despite pledges. No region is on track to decouple economic growth from resource consumption at the pace required."
+      },
+      leaders: [
+        { name: "Sweden", detail: "Leads Europe in circular economy legislation; 'repair revolution' law reduced VAT on repairs and second-hand goods." },
+        { name: "Germany", detail: "World's most advanced waste separation and recycling system; over 65% of municipal waste recycled." },
+        { name: "Japan", detail: "Mottainai culture drives world-class waste prevention; law-mandated 3R (reduce, reuse, recycle) framework." },
+        { name: "Netherlands", detail: "Ambition to halve raw material use by 2030; pioneering product-as-a-service and industrial symbiosis models." },
+        { name: "Denmark", detail: "Leads in sustainable product design regulations and green public procurement standards across the EU." }
+      ]
+    }
   },
   {
     id: 13,
@@ -437,7 +497,27 @@ const GOALS_DATA = [
       "Climate change could push 216 million people into internal migration by 2050.",
       "Limiting warming to 1.5°C requires cutting greenhouse gas emissions by 45% by 2030."
     ],
-    progress: "The Paris Agreement, ratified by 197 parties, established the most comprehensive global framework ever for limiting warming to 1.5–2°C. Renewable energy investment has surged past fossil fuels in annual financing, and coal's share of global power generation is declining in many regions. Despite this momentum, current nationally determined contributions still put the world on a path toward roughly 2.5–3°C of warming by 2100. Halving emissions by 2030 — the level scientists say is necessary — would require transformational changes across energy, transport, agriculture, and industry at unprecedented speed."
+    progress: {
+      overview: "The global response to climate change has accelerated dramatically since 2015 — the Paris Agreement brought unprecedented political commitment, and clean energy investment has surged past fossil fuels. But collective action is still falling far short of what science demands, and the window for limiting warming to 1.5°C is rapidly closing.",
+      accomplishments: [
+        "The Paris Agreement, ratified by 197 parties, created the first universal legally binding climate framework.",
+        "Annual investment in renewable energy exceeded $1 trillion for the first time in 2023.",
+        "Coal's share of global power generation declined from 40% in 2014 to 36% in 2023.",
+        "100+ countries adopted National Adaptation Plans to build climate resilience.",
+        "The EU launched the world's first Carbon Border Adjustment Mechanism in 2023, taxing carbon-intensive imports."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "Current nationally determined contributions put the world on a path to 2.5–3°C of warming by 2100 — far above the 1.5°C target. Global CO₂ emissions hit a record high in 2023. To stay on a 1.5°C pathway, emissions must be cut by 45% by 2030 from 2010 levels — requiring a transformation of energy, transport, agriculture, and industry at unprecedented speed. Loss and damage from climate extremes is already irreversible in many parts of the world."
+      },
+      leaders: [
+        { name: "Denmark", detail: "Committed to 70% emissions cut by 2030; already generates 50%+ of electricity from wind." },
+        { name: "United Kingdom", detail: "First major economy to legislate net-zero by 2050; cut emissions 50% from 1990 levels as of 2023." },
+        { name: "European Union", detail: "European Green Deal targets 55% emissions cut by 2030; world's largest carbon market (EU ETS)." },
+        { name: "Costa Rica", detail: "Near-100% renewable electricity and committed to net-zero by 2050 despite being a developing nation." },
+        { name: "Bhutan", detail: "Constitutionally mandated 60%+ forest cover; carbon-negative nation — absorbs more CO₂ than it emits." }
+      ]
+    }
   },
   {
     id: 14,
@@ -457,7 +537,27 @@ const GOALS_DATA = [
       "Around 80% of marine pollution originates from land-based activities.",
       "By 2050, there could be more plastic in the ocean than fish by weight."
     ],
-    progress: "The share of the ocean under formal protection grew from under 1% in 2000 to nearly 8% by 2023, and a landmark UN High Seas Treaty was adopted in 2023 to extend protection to international waters. International agreements on reducing plastic pollution and ending harmful fishing subsidies have moved forward. However, ocean warming, acidification, and plastic pollution are all accelerating, and overfishing continues in roughly 35% of monitored fish stocks. Turning the tide will require significantly stronger global governance and pollution controls."
+    progress: {
+      overview: "Oceans cover 70% of our planet and are the lifeblood of Earth's climate, food systems, and biodiversity. While marine protection has expanded and international governance frameworks have improved, ocean warming, acidification, and plastic pollution are accelerating and many key 2020 targets were missed entirely.",
+      accomplishments: [
+        "Marine protected areas grew from under 1% of ocean in 2000 to 8.3% by 2023.",
+        "The UN High Seas Treaty (2023) established a framework to protect international waters for the first time.",
+        "WTO agreement to end harmful fishing subsidies adopted in 2022 — first trade agreement focused on sustainability.",
+        "Several countries eliminated single-use plastics through national legislation.",
+        "Coral reef restoration programs successfully expanded in Australia, the US, and the Maldives."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "Ocean surface temperatures hit record highs in 2023, causing mass coral bleaching events on a global scale. Overfishing persists in 35% of monitored fish stocks. Plastic pollution is projected to triple by 2040 without intervention. Ocean acidification has increased 26% since the Industrial Revolution. The 2020 target to protect 10% of coastal and marine areas was missed; the revised 30% by 2030 target will require an unprecedented expansion of protection regimes."
+      },
+      leaders: [
+        { name: "Palau", detail: "Created one of the world's largest marine sanctuaries — protecting 80% of its waters from fishing and extraction." },
+        { name: "New Zealand", detail: "Motu Moana marine reserve expansion and world-leading Kaitiakitanga (ocean guardianship) policies." },
+        { name: "Norway", detail: "Leads in sustainable fisheries management; strict quotas help maintain healthy North Sea fish populations." },
+        { name: "Seychelles", detail: "Protected 30% of its ocean — exceeding the global 2030 target already — through a debt-for-nature swap." },
+        { name: "European Union", detail: "Common Fisheries Policy and marine spatial planning among the most comprehensive ocean governance systems." }
+      ]
+    }
   },
   {
     id: 15,
@@ -477,7 +577,27 @@ const GOALS_DATA = [
       "Forests cover 31% of the land area on our planet.",
       "Deforestation removes 10 million hectares of forest every year."
     ],
-    progress: "Protected land areas now cover 16% of the world's terrestrial surface, up from around 10% in 2000, and reforestation programmes are scaling up across multiple continents. The Kunming-Montreal Global Biodiversity Framework, agreed in 2022, committed nations to protecting 30% of land and sea by 2030. Despite these milestones, current species extinction rates are estimated at 100 to 1,000 times higher than natural background levels, and net global forest cover continues to decline as gains in some regions are outpaced by ongoing deforestation in tropical areas."
+    progress: {
+      overview: "Terrestrial ecosystems and biodiversity are under unprecedented pressure — land degradation, deforestation, and species extinction are all accelerating. However, the global policy framework has significantly strengthened with the Kunming-Montreal Biodiversity Framework, and protected land areas are at their largest extent in history.",
+      accomplishments: [
+        "Protected land areas grew from 10% to 17% of the world's terrestrial surface between 2000 and 2023.",
+        "The Kunming-Montreal Biodiversity Framework (2022) committed 196 nations to protect 30% of land and sea by 2030.",
+        "Net deforestation in Brazil's Amazon fell by 50% between 2005 and 2014 under REDD+ programmes.",
+        "Costa Rica reversed deforestation entirely — forest cover grew from 21% in 1987 to over 57% today.",
+        "China planted 66 billion trees between 2017 and 2022 — the world's largest tree-planting campaign."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "Species extinction rates are 100 to 1,000 times above natural background levels. Over 1 million species face extinction. Net forest cover continues to decline — Brazil's Amazon deforestation spiked again in 2021–2022 before policy reversal. The 2020 Aichi Biodiversity Targets were largely missed. Achieving the 30x30 target by 2030 will require protecting nearly double the current area of land within just four years."
+      },
+      leaders: [
+        { name: "Costa Rica", detail: "Reversed deforestation; forest cover grew from 21% to 57%; pays landowners to protect forests." },
+        { name: "Bhutan", detail: "Constitutionally 60%+ forest cover; first country to measure Gross National Happiness over GDP." },
+        { name: "Germany", detail: "National biodiversity strategy with strict habitat protection; leads EU nature restoration law." },
+        { name: "New Zealand", detail: "Ambitious Predator Free 2050 program; significant native bird species recovery across islands." },
+        { name: "China", detail: "World's largest tree-planting campaigns and national park system expansion covering 18% of its territory." }
+      ]
+    }
   },
   {
     id: 16,
@@ -497,7 +617,27 @@ const GOALS_DATA = [
       "Corruption costs $2.6 trillion per year globally.",
       "One person is forcibly displaced every 2 seconds due to conflict or persecution."
     ],
-    progress: "The spread of functioning democracies, wider access to civil registration, and the adoption of anti-corruption legislation in many countries represent meaningful institutional progress. Globally, homicide rates have declined over the long term, and more countries now have independent audit institutions. However, armed conflict and political violence intensified significantly after 2012, and the number of forcibly displaced people reached a record 117 million in 2023. Strengthening accountability mechanisms, protecting civic space, and investing in conflict prevention remain among the most urgent priorities for this goal."
+    progress: {
+      overview: "Strong institutions and peaceful societies are the bedrock of every other SDG. While governance and legal systems improved in many countries through the 2000s and early 2010s, the post-2015 period brought a sharp reversal: armed conflicts multiplied, forced displacement reached record levels, and democratic backsliding spread across multiple regions.",
+      accomplishments: [
+        "Global homicide rates declined from 7.4 per 100,000 in 2004 to 5.8 by 2019.",
+        "Birth registration reached 75% of children globally in 2022, up from 58% in 2000.",
+        "Anti-corruption laws were enacted in over 80 countries since 2015; the UN Convention Against Corruption has 190 signatories.",
+        "The International Criminal Court indicted war criminals from 31 countries since its establishment in 2002.",
+        "Access to justice reforms improved in over 50 countries, including legal aid systems and court digitisation."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "Armed conflict and political violence increased sharply after 2012. A record 117 million people were forcibly displaced in 2023 — the highest number ever recorded. Civic space is shrinking in over 85 countries. The number of functioning democracies fell to its lowest level since 1990. Corruption remains systemic in many states, siphoning $2.6 trillion per year from public resources. Achieving SDG 16 by 2030 requires an urgent reversal of these trends."
+      },
+      leaders: [
+        { name: "Denmark", detail: "World's least corrupt country (Transparency International); transparent institutions and independent judiciary." },
+        { name: "Iceland", detail: "Consistently top 3 in peace indices; near-zero corruption, no military, highly trusted public institutions." },
+        { name: "Finland", detail: "Among the world's most transparent and accountable governments; top press freedom rankings." },
+        { name: "New Zealand", detail: "Pioneered open government legislation; top global rankings for rule of law and low corruption." },
+        { name: "Norway", detail: "Strong international justice institutions; hosts many UN human rights and conflict resolution bodies." }
+      ]
+    }
   },
   {
     id: 17,
@@ -517,6 +657,26 @@ const GOALS_DATA = [
       "International trade has grown from 18% to 25% of global GDP over 30 years.",
       "Achieving all SDGs requires an estimated $5–7 trillion per year globally."
     ],
-    progress: "Official development assistance reached a record $204 billion in 2022, and the proportion of countries with national statistical plans is growing, improving the data needed to track all SDGs. Debt relief initiatives have provided some breathing room to the most heavily indebted developing nations. However, the annual financing gap for achieving the SDGs is estimated at $4 trillion, and geopolitical tensions are straining multilateral cooperation. Strengthening the global partnership — through fairer trade rules, technology transfer, and increased concessional finance — is the backbone upon which all other goals depend."
+    progress: {
+      overview: "Global partnerships for development were never stronger on paper — record aid flows, expanding trade, and unprecedented data sharing commitments. Yet the financing gap to achieve all SDGs has grown wider every year, and geopolitical fractures are undermining the multilateral cooperation upon which every other goal depends.",
+      accomplishments: [
+        "Official Development Assistance reached a record $204 billion in 2022.",
+        "Internet connectivity grew from 16% to 66% of the global population between 2005 and 2023.",
+        "G20 countries agreed to a global minimum corporate tax of 15% in 2021 — the largest reform of international taxation in decades.",
+        "Debt relief under the G20 Common Framework provided breathing room to the most heavily indebted nations.",
+        "The share of developing countries with a fully funded national statistical plan grew from 13% to 55% since 2015."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "The annual SDG financing gap is estimated at $4 trillion per year in developing countries — a figure growing faster than aid flows. Only five countries (Sweden, Norway, Luxembourg, Denmark, and the UK) consistently meet the UN target of donating 0.7% of GNI as foreign aid. Geopolitical tensions are stalling multilateral trade negotiations and technology transfer agreements. Without a fundamental restructuring of the global financial architecture, many lower-income countries will be left behind."
+      },
+      leaders: [
+        { name: "Sweden", detail: "Donates over 1% of GNI in foreign aid consistently; global leader in development cooperation quality." },
+        { name: "Norway", detail: "Exceeds 0.7% ODA target; major funder of climate finance, peace building, and global health initiatives." },
+        { name: "Luxembourg", detail: "Highest ODA as % of GNI in the world at over 1%; champion of multilateral development finance." },
+        { name: "Denmark", detail: "Consistently exceeds 0.7% ODA; long-standing champion of fair trade and global governance reform." },
+        { name: "Germany", detail: "World's second-largest ODA donor in absolute terms; major contributor to climate and health global funds." }
+      ]
+    }
   }
 ];
