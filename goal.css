@@ -1,0 +1,444 @@
+/* #region CSS Head */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #ffffff;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-text-light: #696969;
+    --goal-color: #0183d4;
+}
+
+.layout {
+    margin: 0 auto;
+}
+
+/* #endregion */
+
+/* #region Topbar */
+.topbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+    font-size: 16px;
+    margin-right: 350px;
+    margin-top: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar2 {
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: -8px;
+}
+
+.logocontainer img {
+    width: 59px;
+    height: auto;
+    margin-left: 350px;
+}
+
+/* #endregion */
+
+/* #region Hero */
+
+.goal-hero {
+    background: var(--goal-color);
+    padding: 60px 20px 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.goal-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    background-color: rgba(255,255,255,0.25);
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.goal-hero-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 0 14px;
+}
+
+.goal-hero-subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    max-width: 640px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+/* #endregion */
+
+/* #region Content */
+
+.goal-content {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 50px 20px 80px;
+}
+
+/* Section headers */
+.section-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #111;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--goal-color);
+    display: inline-block;
+}
+
+/* Key Targets */
+.goal-section {
+    margin-bottom: 50px;
+}
+
+.targets-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.targets-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 16px 20px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #333;
+}
+
+.target-number {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--goal-color);
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Key Facts */
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.fact-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-left: 4px solid var(--goal-color);
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Global Progress */
+.progress-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.progress-overview {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    background: #f8f9fa;
+    border-left: 5px solid var(--goal-color);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 0;
+}
+
+.progress-subsection {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.progress-sub-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #111;
+    margin: 0 0 2px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--goal-color);
+    display: inline-block;
+}
+
+.progress-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.progress-bullets li {
+    padding: 12px 16px 12px 44px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    position: relative;
+}
+
+.progress-bullets li::before {
+    content: "✓";
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    color: var(--goal-color);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.outlook-box {
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.outlook-box.on-track  { background: #f0fdf4; border-left: 5px solid #16a34a; }
+.outlook-box.at-risk   { background: #fffbeb; border-left: 5px solid #d97706; }
+.outlook-box.off-track { background: #fef2f2; border-left: 5px solid #dc2626; }
+
+.outlook-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    color: #fff;
+}
+
+.on-track  .outlook-badge { background: #16a34a; }
+.at-risk   .outlook-badge { background: #d97706; }
+.off-track .outlook-badge { background: #dc2626; }
+
+.outlook-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.leader-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    border-top: 3px solid var(--goal-color);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.leader-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: #111;
+}
+
+.leader-detail {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* #endregion */
+
+/* #region Goal Navigation */
+
+.goal-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 860px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    gap: 16px;
+}
+
+.goal-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    background: #f0f0f0;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+.goal-nav-btn:hover {
+    background: var(--goal-color);
+    color: #fff;
+}
+
+.goal-nav-btn.disabled {
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.goal-nav-btn .nav-label {
+    font-size: 12px;
+    font-weight: normal;
+    opacity: 0.7;
+    display: block;
+    line-height: 1.2;
+}
+
+.goal-nav-btn .nav-title {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+}
+
+.goal-nav-center {
+    font-size: 13px;
+    color: #888;
+}
+
+/* #endregion */
+
+/* #region Footer */
+.footer {
+  background-color: #1f2937;
+  color: #ffffff;
+  padding: 48px 32px;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin-top: 0;
+}
+
+.footer-content {
+  max-width: calc(100% - 500px);
+  margin: 0 auto;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-navigation {
+  transform: translateX(50px);
+}
+
+.footer-heading {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 24px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.social-icon {
+  width: 33px;
+  height: auto;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  margin: 0;
+  color: lightgray;
+}
+/* #endregion */

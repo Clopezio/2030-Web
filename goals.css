@@ -121,6 +121,18 @@ hr {
 
 /* #region Cards */
 
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link:hover .card {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    transform: translateY(-2px);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
 .card {
     background-color: var(--color-white);
     border-radius: 10px;
