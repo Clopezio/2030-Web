@@ -132,20 +132,17 @@ hr {
     margin-bottom: 20px;
 }
 
-
-
-
 /* #region Footer */
 .footer {
   background-color: #1f2937;
   color: #ffffff;
-  padding: 48px 24px 32px;
+  padding: 48px 32px;
   font-family: system-ui, -apple-system, sans-serif;
   margin-top: 200px;
 }
 
 .footer-content {
-  max-width: calc(100% - 700px);
+  max-width: calc(100% - 500px);
   margin: 0 auto;
 }
 
@@ -154,6 +151,10 @@ hr {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 32px;
   margin-bottom: 32px;
+}
+
+.footer-navigation {
+  transform: translateX(50px);
 }
 
 .footer-heading {
