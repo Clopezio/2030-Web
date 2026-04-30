@@ -195,6 +195,21 @@ html, body {
     color: #333;
 }
 
+/* Global Progress */
+.progress-block {
+    background: #f8f9fa;
+    border-left: 5px solid var(--goal-color);
+    border-radius: 10px;
+    padding: 28px 28px 24px;
+}
+
+.progress-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
 /* #endregion */
 
 /* #region Goal Navigation */

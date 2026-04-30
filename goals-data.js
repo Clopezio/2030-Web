@@ -16,7 +16,8 @@ const GOALS_DATA = [
       "1 in 10 people worldwide earns less than $2.15 per day.",
       "COVID-19 pushed an estimated 97 million more people into poverty.",
       "Women and children are disproportionately affected by poverty worldwide."
-    ]
+    ],
+    progress: "The global extreme poverty rate fell dramatically from 36% in 1990 to around 9% by 2019, lifting over a billion people out of poverty in three decades. COVID-19 reversed years of gains, pushing an estimated 97 million additional people below the poverty line. Recovery has been underway since 2021, but progress remains uneven across regions, and conflict-affected countries face the steepest challenges. Accelerated investment in social protection and resilient livelihoods is essential to keep the 2030 target within reach."
   },
   {
     id: 2,
@@ -35,7 +36,8 @@ const GOALS_DATA = [
       "3.1 billion people cannot afford a healthy diet.",
       "1 in 3 people worldwide suffer some form of malnutrition.",
       "Agriculture accounts for 70% of freshwater withdrawals worldwide."
-    ]
+    ],
+    progress: "The number of hungry people fell steadily through the early 2010s, but the trend reversed sharply after 2020 due to conflict, climate shocks, and the economic fallout of the pandemic. In 2023 roughly 733 million people faced hunger — more than in 2015 when the goal was set. Advances in sustainable agriculture, drought-resistant crops, and smallholder support programmes offer a path forward, but the world is not currently on track to achieve Zero Hunger by 2030 without urgent policy action."
   },
   {
     id: 3,
@@ -54,7 +56,8 @@ const GOALS_DATA = [
       "Tobacco causes more than 8 million deaths each year.",
       "Mental health disorders affect 1 in 8 people globally.",
       "Road traffic injuries are the leading cause of death among young people aged 5–29."
-    ]
+    ],
+    progress: "Since 2000, child and maternal mortality rates have fallen significantly, and global life expectancy rose from 67 years to 73.3 years by 2019. Expanded vaccine coverage and antiretroviral treatment have saved millions of lives. COVID-19 caused the largest single setback to life expectancy in decades and strained health systems worldwide. Recovery is ongoing, but universal health coverage — a cornerstone of SDG 3 — remains out of reach for billions, particularly in lower-income countries."
   },
   {
     id: 4,
@@ -73,7 +76,8 @@ const GOALS_DATA = [
       "Two thirds of the world's 750 million illiterate adults are women.",
       "617 million children and adolescents lack minimum proficiency in reading and maths.",
       "Only 4% of students with disabilities in developing countries complete primary school."
-    ]
+    ],
+    progress: "Primary school enrolment has improved dramatically since 2000, with global net enrolment now above 89%. Yet enrolment alone does not guarantee learning — more than 617 million children still cannot read or do basic maths at the end of primary school. COVID-19 school closures erased an estimated 1.6 trillion student-days of instruction, widening existing inequalities. Targeted teacher training, digital learning tools, and inclusive policies are helping rebuild lost ground."
   },
   {
     id: 5,
@@ -92,7 +96,8 @@ const GOALS_DATA = [
       "Women earn 20% less than men on average globally.",
       "Women hold only 26% of parliamentary seats worldwide.",
       "An estimated 650 million women alive today were married before age 18."
-    ]
+    ],
+    progress: "More girls than ever are enrolled in school, and women's representation in parliaments has grown to 26% globally. Maternal mortality has declined by 34% since 2000, and laws criminalising domestic violence now exist in over 160 countries. Despite these gains, the World Economic Forum estimates that full gender equality will not be achieved for over 300 years at the current pace. Closing persistent gaps in economic participation, leadership, and safety requires sustained political will and structural reform."
   },
   {
     id: 6,
@@ -111,7 +116,8 @@ const GOALS_DATA = [
       "3.6 billion people lack safely managed sanitation.",
       "80% of wastewater flows back into the ecosystem without treatment.",
       "Water scarcity affects more than 40% of the world's population."
-    ]
+    ],
+    progress: "Between 2000 and 2022, 2.1 billion people gained access to safe drinking water and 2.4 billion gained access to basic sanitation — significant milestones. However, safely managed water and sanitation (the higher standard set by SDG 6) remain out of reach for billions, especially in rural sub-Saharan Africa and South Asia. Progress is decelerating as the remaining gap is concentrated in the hardest-to-reach populations, and climate change is intensifying water stress in many regions."
   },
   {
     id: 7,
@@ -130,7 +136,8 @@ const GOALS_DATA = [
       "Renewable energy now makes up 30% of global electricity generation.",
       "Energy is responsible for 73% of human-caused greenhouse gas emissions.",
       "Every dollar invested in clean energy generates up to 3 times more jobs than fossil fuels."
-    ]
+    ],
+    progress: "Renewable energy has expanded rapidly: solar and wind capacity more than doubled between 2015 and 2023, and renewables now account for over 30% of global electricity generation. The number of people without electricity fell from 1.2 billion in 2010 to around 675 million by 2023. Despite this momentum, energy efficiency improvements need to triple to meet 2030 targets, and clean cooking access remains a critical gap for nearly 2.3 billion people who still rely on polluting fuels."
   },
   {
     id: 8,
@@ -149,7 +156,8 @@ const GOALS_DATA = [
       "Around 2 billion people work informally, without social protection.",
       "The global unemployment rate was 5.3% in 2023.",
       "Youth are three times more likely to be unemployed than adults."
-    ]
+    ],
+    progress: "Strong global economic growth and rising labour productivity from 2000 to 2019 showed that sustained, broad-based progress was achievable. The pandemic wiped out an estimated 255 million full-time equivalent jobs in 2020 alone, the worst disruption since World War II. Recovery has since been partial and uneven: formal employment is growing in many high-income countries while informality and youth unemployment persist across the Global South. Child labour, which had been declining, ticked upward for the first time in 20 years during the pandemic, underscoring the fragility of past gains."
   },
   {
     id: 9,
@@ -168,7 +176,8 @@ const GOALS_DATA = [
       "Manufacturing accounts for 16% of GDP and 14% of employment globally.",
       "Global R&D spending reached $2.4 trillion, but low-income countries invest less than 1% of GDP.",
       "Least developed countries have only 1 researcher per million inhabitants compared to 7,000 in high-income countries."
-    ]
+    ],
+    progress: "Internet connectivity has expanded sharply, with 66% of the global population now online compared to just 16% in 2005. Mobile broadband and off-grid renewable energy infrastructure are spreading rapidly into previously unserved areas. However, an infrastructure gap estimated at $15 trillion persists in developing countries, and manufacturing value-added as a share of GDP in least developed countries has remained stagnant. Bridging this gap requires a significant increase in both public investment and private sector innovation."
   },
   {
     id: 10,
@@ -187,7 +196,8 @@ const GOALS_DATA = [
       "Income inequality has increased in most countries over the past 30 years.",
       "People with disabilities are twice as likely to be unemployed.",
       "Migrants send over $700 billion in remittances to developing countries each year."
-    ]
+    ],
+    progress: "Between 2011 and 2019, the incomes of the bottom 40% grew faster than the national average in about half of the countries with available data — a positive signal. International remittances and improved social protection systems have provided meaningful support to vulnerable populations. Yet the COVID-19 pandemic sharply reversed much of this progress: the richest 1% captured nearly twice as much new wealth as the rest of the world combined between 2020 and 2022. Tackling inequality requires bold fiscal policies, fair trade rules, and strong anti-discrimination frameworks."
   },
   {
     id: 11,
@@ -206,7 +216,8 @@ const GOALS_DATA = [
       "By 2050, nearly 7 of 10 people will live in cities.",
       "More than 1 billion people still live in informal settlements and slums.",
       "Cities consume 78% of the world's energy and produce more than 60% of greenhouse gas emissions."
-    ]
+    ],
+    progress: "Urban access to improved water, sanitation, and basic services has improved across many cities. The proportion of urban residents living in slums fell from 30% to 24% globally between 2000 and 2020, though the absolute number has grown as cities expand. Many cities are now adopting climate resilience plans and investing in public transport. However, rapid urbanisation in Africa and Asia means the absolute scale of the housing and infrastructure challenge continues to grow faster than solutions are being deployed."
   },
   {
     id: 12,
@@ -225,7 +236,8 @@ const GOALS_DATA = [
       "1.3 billion tonnes of food — one third of all food produced — is wasted annually.",
       "Only 9% of the world's plastic has ever been recycled.",
       "The fashion industry produces 10% of global carbon emissions."
-    ]
+    ],
+    progress: "Dozens of countries have adopted national action plans on sustainable consumption and production, and corporate sustainability reporting has expanded significantly. The circular economy is gaining traction in Europe and parts of Asia, with policies promoting product repair, reuse, and recycling. However, global material footprints remain well above sustainable levels, food waste targets have not been met, and single-use plastic pollution continues to grow. Shifting consumption patterns will require both strong regulations and changes in individual behaviour."
   },
   {
     id: 13,
@@ -244,7 +256,8 @@ const GOALS_DATA = [
       "Sea levels are rising at a rate of 3.6 mm per year.",
       "Climate change could push 216 million people into internal migration by 2050.",
       "Limiting warming to 1.5°C requires cutting greenhouse gas emissions by 45% by 2030."
-    ]
+    ],
+    progress: "The Paris Agreement, ratified by 197 parties, established the most comprehensive global framework ever for limiting warming to 1.5–2°C. Renewable energy investment has surged past fossil fuels in annual financing, and coal's share of global power generation is declining in many regions. Despite this momentum, current nationally determined contributions still put the world on a path toward roughly 2.5–3°C of warming by 2100. Halving emissions by 2030 — the level scientists say is necessary — would require transformational changes across energy, transport, agriculture, and industry at unprecedented speed."
   },
   {
     id: 14,
@@ -263,7 +276,8 @@ const GOALS_DATA = [
       "Over 3 billion people depend on marine and coastal biodiversity for their livelihoods.",
       "Around 80% of marine pollution originates from land-based activities.",
       "By 2050, there could be more plastic in the ocean than fish by weight."
-    ]
+    ],
+    progress: "The share of the ocean under formal protection grew from under 1% in 2000 to nearly 8% by 2023, and a landmark UN High Seas Treaty was adopted in 2023 to extend protection to international waters. International agreements on reducing plastic pollution and ending harmful fishing subsidies have moved forward. However, ocean warming, acidification, and plastic pollution are all accelerating, and overfishing continues in roughly 35% of monitored fish stocks. Turning the tide will require significantly stronger global governance and pollution controls."
   },
   {
     id: 15,
@@ -282,7 +296,8 @@ const GOALS_DATA = [
       "Land degradation affects 3.2 billion people and costs over $300 billion per year.",
       "Forests cover 31% of the land area on our planet.",
       "Deforestation removes 10 million hectares of forest every year."
-    ]
+    ],
+    progress: "Protected land areas now cover 16% of the world's terrestrial surface, up from around 10% in 2000, and reforestation programmes are scaling up across multiple continents. The Kunming-Montreal Global Biodiversity Framework, agreed in 2022, committed nations to protecting 30% of land and sea by 2030. Despite these milestones, current species extinction rates are estimated at 100 to 1,000 times higher than natural background levels, and net global forest cover continues to decline as gains in some regions are outpaced by ongoing deforestation in tropical areas."
   },
   {
     id: 16,
@@ -301,7 +316,8 @@ const GOALS_DATA = [
       "1 in 4 children under 5 is unregistered — leaving them without legal identity.",
       "Corruption costs $2.6 trillion per year globally.",
       "One person is forcibly displaced every 2 seconds due to conflict or persecution."
-    ]
+    ],
+    progress: "The spread of functioning democracies, wider access to civil registration, and the adoption of anti-corruption legislation in many countries represent meaningful institutional progress. Globally, homicide rates have declined over the long term, and more countries now have independent audit institutions. However, armed conflict and political violence intensified significantly after 2012, and the number of forcibly displaced people reached a record 117 million in 2023. Strengthening accountability mechanisms, protecting civic space, and investing in conflict prevention remain among the most urgent priorities for this goal."
   },
   {
     id: 17,
@@ -320,6 +336,7 @@ const GOALS_DATA = [
       "Internet access reaches 66% of the global population, leaving 2.7 billion offline.",
       "International trade has grown from 18% to 25% of global GDP over 30 years.",
       "Achieving all SDGs requires an estimated $5–7 trillion per year globally."
-    ]
+    ],
+    progress: "Official development assistance reached a record $204 billion in 2022, and the proportion of countries with national statistical plans is growing, improving the data needed to track all SDGs. Debt relief initiatives have provided some breathing room to the most heavily indebted developing nations. However, the annual financing gap for achieving the SDGs is estimated at $4 trillion, and geopolitical tensions are straining multilateral cooperation. Strengthening the global partnership — through fairer trade rules, technology transfer, and increased concessional finance — is the backbone upon which all other goals depend."
   }
 ];
