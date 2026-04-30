@@ -104,7 +104,6 @@
         // Hero
         document.getElementById('goal-hero').innerHTML =
             '<div class="goal-hero">' +
-                '<a href="goals.html" class="goal-back-link">Back to all goals</a>' +
                 '<div class="goal-badge">' + goal.id + '</div>' +
                 '<h1 class="goal-hero-title">' + escHtml(goal.title) + '</h1>' +
                 '<p class="goal-hero-subtitle">' + escHtml(goal.subtitle) + '</p>' +
@@ -171,7 +170,6 @@
     function renderNotFound() {
         document.getElementById('goal-hero').innerHTML =
             '<div class="goal-hero" style="background:#555;">' +
-                '<a href="goals.html" class="goal-back-link">Back to all goals</a>' +
                 '<div class="goal-badge">?</div>' +
                 '<h1 class="goal-hero-title">Goal not found</h1>' +
                 '<p class="goal-hero-subtitle">Please go back and select a valid goal.</p>' +

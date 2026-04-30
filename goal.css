@@ -87,24 +87,6 @@ html, body {
     color: #fff;
 }
 
-.goal-back-link {
-    display: inline-block;
-    margin-bottom: 30px;
-    color: rgba(255,255,255,0.85);
-    text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    transition: color 0.2s;
-}
-
-.goal-back-link:hover {
-    color: #fff;
-}
-
-.goal-back-link::before {
-    content: "← ";
-}
-
 .goal-badge {
     display: inline-flex;
     align-items: center;
