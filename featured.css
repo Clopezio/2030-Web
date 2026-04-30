@@ -89,48 +89,7 @@ hr {
 
 /* #endregion */
 
-.container {
-    width: calc(100% - 700px);
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.title {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 500;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: -30px;
-    margin-bottom: 50px;
-
-}
-
-.img-box {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.terra {
-    width: calc(100% - 700px);
-    height: 550px;
-    object-fit: cover;
-    object-position: center; 
-    border-radius: 20px;
-}
-
-.mini-title {
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
+/*
 
 /* #region Footer */
 .footer {
