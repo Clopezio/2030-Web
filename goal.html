@@ -127,6 +127,47 @@
         });
         factsHtml += '</div>';
 
+        // Progress
+        var p = goal.progress;
+        var accomplishmentsHtml = '<ul class="progress-bullets">';
+        p.accomplishments.forEach(function(a) {
+            accomplishmentsHtml += '<li>' + escHtml(a) + '</li>';
+        });
+        accomplishmentsHtml += '</ul>';
+
+        var outlookClass = p.outlook.status === 'On Track' ? 'on-track'
+                         : p.outlook.status === 'At Risk'  ? 'at-risk'
+                         : 'off-track';
+
+        var leadersHtml = '';
+        p.leaders.forEach(function(l) {
+            leadersHtml +=
+                '<div class="leader-card">' +
+                    '<span class="leader-name">' + escHtml(l.name) + '</span>' +
+                    '<span class="leader-detail">' + escHtml(l.detail) + '</span>' +
+                '</div>';
+        });
+
+        var progressHtml =
+            '<div class="progress-block">' +
+                '<p class="progress-overview">' + escHtml(p.overview) + '</p>' +
+                '<div class="progress-subsection">' +
+                    '<h3 class="progress-sub-title">What We\'ve Accomplished</h3>' +
+                    accomplishmentsHtml +
+                '</div>' +
+                '<div class="progress-subsection">' +
+                    '<h3 class="progress-sub-title">2030 Outlook</h3>' +
+                    '<div class="outlook-box ' + outlookClass + '">' +
+                        '<span class="outlook-badge">' + escHtml(p.outlook.status) + '</span>' +
+                        '<p class="outlook-text">' + escHtml(p.outlook.text) + '</p>' +
+                    '</div>' +
+                '</div>' +
+                '<div class="progress-subsection">' +
+                    '<h3 class="progress-sub-title">Leading Nations</h3>' +
+                    '<div class="leaders-grid">' + leadersHtml + '</div>' +
+                '</div>' +
+            '</div>';
+
         document.getElementById('goal-content').innerHTML =
             '<div class="goal-content">' +
                 '<section class="goal-section">' +
@@ -139,9 +180,7 @@
                 '</section>' +
                 '<section class="goal-section">' +
                     '<span class="section-title">Global Progress</span>' +
-                    '<div class="progress-block">' +
-                        '<p class="progress-text">' + escHtml(goal.progress) + '</p>' +
-                    '</div>' +
+                    progressHtml +
                 '</section>' +
             '</div>';
 

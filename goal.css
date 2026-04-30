@@ -197,17 +197,129 @@ html, body {
 
 /* Global Progress */
 .progress-block {
-    background: #f8f9fa;
-    border-left: 5px solid var(--goal-color);
-    border-radius: 10px;
-    padding: 28px 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.progress-text {
-    margin: 0;
+.progress-overview {
     font-size: 16px;
     line-height: 1.8;
     color: #333;
+    background: #f8f9fa;
+    border-left: 5px solid var(--goal-color);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 0;
+}
+
+.progress-subsection {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.progress-sub-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #111;
+    margin: 0 0 2px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--goal-color);
+    display: inline-block;
+}
+
+.progress-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.progress-bullets li {
+    padding: 12px 16px 12px 44px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    position: relative;
+}
+
+.progress-bullets li::before {
+    content: "✓";
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    color: var(--goal-color);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.outlook-box {
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.outlook-box.on-track  { background: #f0fdf4; border-left: 5px solid #16a34a; }
+.outlook-box.at-risk   { background: #fffbeb; border-left: 5px solid #d97706; }
+.outlook-box.off-track { background: #fef2f2; border-left: 5px solid #dc2626; }
+
+.outlook-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    color: #fff;
+}
+
+.on-track  .outlook-badge { background: #16a34a; }
+.at-risk   .outlook-badge { background: #d97706; }
+.off-track .outlook-badge { background: #dc2626; }
+
+.outlook-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.leader-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    border-top: 3px solid var(--goal-color);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.leader-name {
+    font-weight: 700;
+    font-size: 15px;
+    color: #111;
+}
+
+.leader-detail {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* #endregion */

@@ -17,7 +17,27 @@ const GOALS_DATA = [
       "COVID-19 pushed an estimated 97 million more people into poverty.",
       "Women and children are disproportionately affected by poverty worldwide."
     ],
-    progress: "The global extreme poverty rate fell dramatically from 36% in 1990 to around 9% by 2019, lifting over a billion people out of poverty in three decades. COVID-19 reversed years of gains, pushing an estimated 97 million additional people below the poverty line. Recovery has been underway since 2021, but progress remains uneven across regions, and conflict-affected countries face the steepest challenges. Accelerated investment in social protection and resilient livelihoods is essential to keep the 2030 target within reach."
+    progress: {
+      overview: "The global extreme poverty rate fell from 36% in 1990 to 8.4% in 2019 — one of humanity's greatest achievements — but COVID-19 reversed years of gains and progress toward the 2030 target has effectively stalled.",
+      accomplishments: [
+        "Over 1.2 billion people lifted out of extreme poverty between 1990 and 2019.",
+        "China alone lifted over 800 million people out of poverty since 1978, the largest reduction in history.",
+        "Social protection systems now cover about 45% of the global population, up from under 20% in 2000.",
+        "Rwanda cut its poverty rate from 78% in 2000 to 38% by 2017 through targeted rural development programs.",
+        "Bangladesh reduced extreme poverty from 43% to under 5% between 2000 and 2022."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "COVID-19 pushed an estimated 97 million additional people into extreme poverty in 2020. By 2030, an estimated 575 million people will still live on less than $2.15 per day if current trends continue. Conflict-affected countries now account for over 80% of the extreme poor. Without a dramatic surge in investment and policy action, SDG 1 will not be achieved on time."
+      },
+      leaders: [
+        { name: "China", detail: "Officially declared elimination of extreme rural poverty in 2021 after lifting over 800 million people in four decades." },
+        { name: "Vietnam", detail: "Poverty rate fell from 58% in 1990 to under 5% by 2022 through land reforms and export-led growth." },
+        { name: "Bangladesh", detail: "Reduced extreme poverty from 43% to 5% despite being one of the world's most densely populated nations." },
+        { name: "Rwanda", detail: "Pioneered community-based social protection; one of Africa's fastest poverty-reduction records." },
+        { name: "Brazil", detail: "Bolsa Familia conditional cash transfer program became a global model, lifting millions in the 2000s." }
+      ]
+    }
   },
   {
     id: 2,
@@ -37,7 +57,27 @@ const GOALS_DATA = [
       "1 in 3 people worldwide suffer some form of malnutrition.",
       "Agriculture accounts for 70% of freshwater withdrawals worldwide."
     ],
-    progress: "The number of hungry people fell steadily through the early 2010s, but the trend reversed sharply after 2020 due to conflict, climate shocks, and the economic fallout of the pandemic. In 2023 roughly 733 million people faced hunger — more than in 2015 when the goal was set. Advances in sustainable agriculture, drought-resistant crops, and smallholder support programmes offer a path forward, but the world is not currently on track to achieve Zero Hunger by 2030 without urgent policy action."
+    progress: {
+      overview: "Hunger had been declining for two decades, but since 2019 the trend has sharply reversed — driven by the COVID-19 pandemic, worsening climate shocks, and armed conflicts. The world entered 2023 with more hungry people than when the goal was adopted in 2015.",
+      accomplishments: [
+        "Global undernourishment fell from 14.7% in 2000 to 8.0% in 2019 — a remarkable reduction.",
+        "Child stunting (under-5s) declined from 32.6% in 2000 to 22.3% in 2022.",
+        "Brazil achieved near-zero hunger by 2014 through its Fome Zero (Zero Hunger) program.",
+        "Ethiopia achieved one of the fastest reductions in child stunting in sub-Saharan Africa via the PSNP safety net.",
+        "Many countries doubled smallholder agricultural productivity through improved seeds and irrigation."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "The number of hungry people has risen for four consecutive years, reaching 733 million in 2023 — exceeding the 2015 baseline. The UN estimates the world is nearly 30 years away from ending hunger at the current pace. Achieving SDG 2 by 2030 would require at least a threefold increase in investment in food systems, plus urgent action on conflict and climate change."
+      },
+      leaders: [
+        { name: "Brazil", detail: "Near-zero hunger achieved by 2014 through Fome Zero; twice removed from the UN world hunger map." },
+        { name: "China", detail: "Dramatically reduced food insecurity through large-scale irrigation, rural support, and grain security programs." },
+        { name: "Thailand", detail: "Achieved near-zero hunger through integrated agricultural development and rural poverty programs." },
+        { name: "Ethiopia", detail: "One of Africa's fastest reductions in child stunting in the 2010s through the Productive Safety Net Programme." },
+        { name: "India", detail: "POSHAN 2.0 mission and food subsidy schemes reduced severe malnutrition at significant scale." }
+      ]
+    }
   },
   {
     id: 3,
@@ -57,7 +97,27 @@ const GOALS_DATA = [
       "Mental health disorders affect 1 in 8 people globally.",
       "Road traffic injuries are the leading cause of death among young people aged 5–29."
     ],
-    progress: "Since 2000, child and maternal mortality rates have fallen significantly, and global life expectancy rose from 67 years to 73.3 years by 2019. Expanded vaccine coverage and antiretroviral treatment have saved millions of lives. COVID-19 caused the largest single setback to life expectancy in decades and strained health systems worldwide. Recovery is ongoing, but universal health coverage — a cornerstone of SDG 3 — remains out of reach for billions, particularly in lower-income countries."
+    progress: {
+      overview: "The world made extraordinary health gains between 2000 and 2019 — life expectancy rose six years, child mortality halved, and HIV/AIDS deaths plummeted. Then COVID-19 caused the largest single setback to global life expectancy since World War II, and deep structural coverage gaps remain.",
+      accomplishments: [
+        "Global life expectancy rose from 67 years in 2000 to 73.3 years in 2019.",
+        "Under-5 child mortality fell by over 59% between 2000 and 2022, saving millions of young lives.",
+        "New HIV infections fell 59% since 2000; AIDS-related deaths declined 68% due to antiretroviral therapy.",
+        "Malaria deaths cut by 30% between 2000 and 2015 through bed net distribution and treatment programs.",
+        "Rwanda reduced child mortality by 80% since 2000 — one of the greatest healthcare turnarounds in African history."
+      ],
+      outlook: {
+        status: "At Risk",
+        text: "COVID-19 reversed a decade of progress in life expectancy and strained health systems globally. Universal health coverage — the cornerstone of SDG 3 — remains out of reach for over 4.5 billion people. Rising antimicrobial resistance, the mental health crisis, and non-communicable diseases present growing threats. The world is tracking at roughly 60% of the pace needed to meet all SDG 3 targets by 2030."
+      },
+      leaders: [
+        { name: "Japan", detail: "World's longest life expectancy (84 years); sustained through universal healthcare, diet, and preventive care." },
+        { name: "Singapore", detail: "One of the world's most efficient healthcare systems; among the lowest infant mortality rates globally." },
+        { name: "South Korea", detail: "Achieved near-universal coverage and eliminated preventable diseases through systematic public health investment." },
+        { name: "Norway", detail: "Near-zero maternal mortality and one of the world's highest healthy life expectancy rates." },
+        { name: "Rwanda", detail: "80% reduction in child mortality since 2000; community health worker system replicated worldwide." }
+      ]
+    }
   },
   {
     id: 4,
@@ -77,7 +137,27 @@ const GOALS_DATA = [
       "617 million children and adolescents lack minimum proficiency in reading and maths.",
       "Only 4% of students with disabilities in developing countries complete primary school."
     ],
-    progress: "Primary school enrolment has improved dramatically since 2000, with global net enrolment now above 89%. Yet enrolment alone does not guarantee learning — more than 617 million children still cannot read or do basic maths at the end of primary school. COVID-19 school closures erased an estimated 1.6 trillion student-days of instruction, widening existing inequalities. Targeted teacher training, digital learning tools, and inclusive policies are helping rebuild lost ground."
+    progress: {
+      overview: "School enrollment has reached near-universal levels in most regions — a genuine achievement. But the world faces a deep learning crisis: millions of enrolled children still cannot read or do basic arithmetic, and COVID-19 school closures erased over a decade of learning progress in many countries.",
+      accomplishments: [
+        "Primary school net enrollment rose from 83% in 2000 to over 89% globally by 2022.",
+        "Adult literacy improved from 76% to 87% between 2000 and 2022.",
+        "Gender parity in primary education was largely achieved in most regions of the world.",
+        "South Korea transformed from 22% adult literacy in 1945 to near 100%, leading globally in tertiary education rates.",
+        "Over 180 countries now have some legal right to education enshrined in law."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "COVID-19 school closures erased an estimated 1.6 trillion student-days of instruction and pushed 244 million children out of school. More critically, 617 million children cannot read or do basic maths even after completing primary school. The UN projects 300 million children will still lack basic literacy by 2030 at the current pace. Closing the quality gap — not just the enrollment gap — is the defining education challenge of this decade."
+      },
+      leaders: [
+        { name: "Finland", detail: "Consistently ranked #1 globally for education quality, teacher training, and equitable student outcomes." },
+        { name: "South Korea", detail: "Transformed from widespread illiteracy in 1945 to near-100%; leads globally in tertiary education rates." },
+        { name: "Canada", detail: "Top PISA performer; highly inclusive and well-funded public education systems across provinces." },
+        { name: "Singapore", detail: "Highest PISA scores in maths and science; pioneering government-directed skills development framework." },
+        { name: "Estonia", detail: "Fastest-improving education system in Europe; early digital learning integration from kindergarten." }
+      ]
+    }
   },
   {
     id: 5,
@@ -97,7 +177,27 @@ const GOALS_DATA = [
       "Women hold only 26% of parliamentary seats worldwide.",
       "An estimated 650 million women alive today were married before age 18."
     ],
-    progress: "More girls than ever are enrolled in school, and women's representation in parliaments has grown to 26% globally. Maternal mortality has declined by 34% since 2000, and laws criminalising domestic violence now exist in over 160 countries. Despite these gains, the World Economic Forum estimates that full gender equality will not be achieved for over 300 years at the current pace. Closing persistent gaps in economic participation, leadership, and safety requires sustained political will and structural reform."
+    progress: {
+      overview: "Legal and educational progress on gender equality has been real and measurable since 2000. But deep structural barriers — in political representation, economic participation, and gender-based violence — persist worldwide, and the pace of change remains far too slow.",
+      accomplishments: [
+        "Women's share of parliamentary seats grew from 13% in 2000 to 26% by 2023.",
+        "Maternal mortality declined by 34% between 2000 and 2020, saving hundreds of thousands of lives.",
+        "Over 160 countries now have laws criminalising domestic violence.",
+        "Gender parity in primary school enrollment has been largely achieved globally.",
+        "Iceland became the first country to make equal pay mandatory through legislation in 2018."
+      ],
+      outlook: {
+        status: "Off Track",
+        text: "The World Economic Forum estimates full gender equality will take over 130 years at the current pace. Female labor force participation has barely changed since 1990, sitting at around 47% globally. Only 26 countries have achieved gender parity or better in their legislatures. Violence against women remains at epidemic levels — 1 in 3 women experience physical or sexual violence in their lifetime."
+      },
+      leaders: [
+        { name: "Iceland", detail: "Ranked #1 for gender equality 14 years running by the WEF; first country to enforce equal pay through law." },
+        { name: "Rwanda", detail: "Leads the world in female parliamentary representation at 61% of seats — above any other nation." },
+        { name: "New Zealand", detail: "Led by a female prime minister for 6+ years; strong policies on equal pay and paid parental leave." },
+        { name: "Sweden", detail: "Pioneered feminist foreign policy; one of the world's narrowest gender wage gaps." },
+        { name: "Finland", detail: "Elected the world's youngest female prime minister; near-universal paid parental leave and childcare access." }
+      ]
+    }
   },
   {
     id: 6,
@@ -117,7 +217,27 @@ const GOALS_DATA = [
       "80% of wastewater flows back into the ecosystem without treatment.",
       "Water scarcity affects more than 40% of the world's population."
     ],
-    progress: "Between 2000 and 2022, 2.1 billion people gained access to safe drinking water and 2.4 billion gained access to basic sanitation — significant milestones. However, safely managed water and sanitation (the higher standard set by SDG 6) remain out of reach for billions, especially in rural sub-Saharan Africa and South Asia. Progress is decelerating as the remaining gap is concentrated in the hardest-to-reach populations, and climate change is intensifying water stress in many regions."
+    progress: {
+      overview: "Access to basic water and sanitation has improved significantly over two decades. But SDG 6 demands a much higher standard — safely managed water and sanitation — and on that measure, billions of people are still excluded, particularly in rural Africa and South Asia.",
+      accomplishments: [
+        "2.1 billion people gained access to safe drinking water between 2000 and 2022.",
+        "Open defecation was halved — from 21% of the world's population in 2000 to 9% in 2022.",
+        "2.4 billion people gained basic sanitation access since 2000.",
+        "Singapore turned a water-scarce island into a global leader in water recycling and desalination.",
+        "Over 100 countries have integrated water resources management plans in place."
+      ],
+      outlook: {
+        status: "At Risk",
+        text: "2 billion people still lack safely managed drinking water and 3.6 billion lack safely managed sanitation. Progress is highest in urban areas but virtually stalled in remote rural communities. Climate change is intensifying droughts and floods, putting existing infrastructure under increasing stress. The UN projects a 40% global freshwater supply shortfall by 2030 if current trends continue."
+      },
+      leaders: [
+        { name: "Iceland", detail: "100% of population has safely managed water, powered by natural geothermal and glacial sources." },
+        { name: "Norway", detail: "Universal safe water and sanitation access with world-class wastewater treatment infrastructure." },
+        { name: "Finland", detail: "Consistently ranks highest in water security and treatment standards across the EU." },
+        { name: "Singapore", detail: "Turned a water-scarce city-state into a global model through NEWater recycling and desalination." },
+        { name: "Denmark", detail: "Near-zero drinking water contamination rates and strict nationwide groundwater protection policies." }
+      ]
+    }
   },
   {
     id: 7,
@@ -137,7 +257,27 @@ const GOALS_DATA = [
       "Energy is responsible for 73% of human-caused greenhouse gas emissions.",
       "Every dollar invested in clean energy generates up to 3 times more jobs than fossil fuels."
     ],
-    progress: "Renewable energy has expanded rapidly: solar and wind capacity more than doubled between 2015 and 2023, and renewables now account for over 30% of global electricity generation. The number of people without electricity fell from 1.2 billion in 2010 to around 675 million by 2023. Despite this momentum, energy efficiency improvements need to triple to meet 2030 targets, and clean cooking access remains a critical gap for nearly 2.3 billion people who still rely on polluting fuels."
+    progress: {
+      overview: "The renewable energy revolution is real and accelerating — solar became the cheapest electricity source in history. But universal electrification remains an unfinished agenda for hundreds of millions, and energy efficiency gains are nowhere near the pace required to meet 2030 targets.",
+      accomplishments: [
+        "Solar and wind capacity more than doubled between 2015 and 2023; solar became the cheapest electricity source ever recorded.",
+        "People without electricity fell from 1.2 billion in 2010 to around 675 million by 2023.",
+        "Renewables accounted for 30% of global electricity generation in 2023, up from 19% in 2010.",
+        "Costa Rica generated over 99% of its electricity from renewables for multiple consecutive years.",
+        "135 countries had met or exceeded their renewable energy targets as of 2022."
+      ],
+      outlook: {
+        status: "At Risk",
+        text: "Universal electricity access by 2030 looks unlikely at current rates — electrification in sub-Saharan Africa is being outpaced by population growth. Energy efficiency improvements need to triple their current pace to hit 2030 targets. Clean cooking access is a critical gap: 2.3 billion people still rely on harmful solid fuels. Massive grid infrastructure investment is needed, especially in developing regions."
+      },
+      leaders: [
+        { name: "Iceland", detail: "Nearly 100% of electricity from geothermal and hydropower; one of the world's most carbon-neutral energy mixes." },
+        { name: "Costa Rica", detail: "Generated 99%+ electricity from renewables for over 5 consecutive years; global clean energy model." },
+        { name: "Norway", detail: "Over 90% of electricity from hydropower; world leader in electric vehicle adoption per capita." },
+        { name: "Denmark", detail: "Generates over 60% of electricity from wind; on track to reach 100% renewable electricity." },
+        { name: "Germany", detail: "Invested over $500 billion in the Energiewende (energy transition) since 2000; phasing out coal and nuclear." }
+      ]
+    }
   },
   {
     id: 8,
@@ -157,7 +297,27 @@ const GOALS_DATA = [
       "The global unemployment rate was 5.3% in 2023.",
       "Youth are three times more likely to be unemployed than adults."
     ],
-    progress: "Strong global economic growth and rising labour productivity from 2000 to 2019 showed that sustained, broad-based progress was achievable. The pandemic wiped out an estimated 255 million full-time equivalent jobs in 2020 alone, the worst disruption since World War II. Recovery has since been partial and uneven: formal employment is growing in many high-income countries while informality and youth unemployment persist across the Global South. Child labour, which had been declining, ticked upward for the first time in 20 years during the pandemic, underscoring the fragility of past gains."
+    progress: {
+      overview: "The world built a strong foundation for economic growth and decent work between 2000 and 2019. Then the COVID-19 pandemic caused the worst labor market disruption since World War II, and recovery has been deeply uneven — widening gaps between formal and informal workers, youth and adults, and richer and poorer nations.",
+      accomplishments: [
+        "Global real GDP per capita grew from roughly $5,700 in 2000 to over $11,500 in 2019.",
+        "Global unemployment fell from 6.6% in 2000 to a historic low of 5.0% by 2019.",
+        "Child labour declined from 246 million in 2000 to 160 million in 2020 — a 35% reduction.",
+        "Labor productivity in developing countries grew more than twice as fast as in high-income countries from 2000 to 2015.",
+        "Germany's dual apprenticeship system became a global model keeping youth unemployment below 5%."
+      ],
+      outlook: {
+        status: "At Risk",
+        text: "The pandemic wiped out 255 million full-time equivalent jobs in 2020. Child labour rose for the first time in two decades during COVID-19. Youth unemployment, informality, and rising cost-of-living crises continue to widen gaps globally. AI and automation are disrupting labour markets faster than education systems can adapt. A significant acceleration in inclusive growth policies is needed to meet 2030 targets."
+      },
+      leaders: [
+        { name: "Germany", detail: "Among the world's lowest youth unemployment rates; globally admired apprenticeship and vocational training systems." },
+        { name: "Japan", detail: "Near-full employment model; one of the lowest structural unemployment rates globally sustained over decades." },
+        { name: "Netherlands", detail: "Pioneered flexible-yet-protected labour market reforms; among the world's highest labour participation rates." },
+        { name: "South Korea", detail: "Transformed from poverty to high-income economy in 30 years; strong labour rights protections." },
+        { name: "Switzerland", detail: "Dual education system combining apprenticeships with academic tracks keeps youth unemployment below 3%." }
+      ]
+    }
   },
   {
     id: 9,
@@ -177,7 +337,27 @@ const GOALS_DATA = [
       "Global R&D spending reached $2.4 trillion, but low-income countries invest less than 1% of GDP.",
       "Least developed countries have only 1 researcher per million inhabitants compared to 7,000 in high-income countries."
     ],
-    progress: "Internet connectivity has expanded sharply, with 66% of the global population now online compared to just 16% in 2005. Mobile broadband and off-grid renewable energy infrastructure are spreading rapidly into previously unserved areas. However, an infrastructure gap estimated at $15 trillion persists in developing countries, and manufacturing value-added as a share of GDP in least developed countries has remained stagnant. Bridging this gap requires a significant increase in both public investment and private sector innovation."
+    progress: {
+      overview: "Digital infrastructure and innovation have expanded faster than almost any other area covered by the SDGs — connecting billions of people who previously had no access. But a massive physical and investment divide between the Global North and South persists, and the technology revolution is widening some gaps even as it closes others.",
+      accomplishments: [
+        "Global internet access grew from 16% in 2005 to 66% in 2023, connecting an additional 3 billion people.",
+        "Mobile money services like M-Pesa revolutionised financial access for tens of millions across Africa.",
+        "Global R&D spending grew from $1.1 trillion in 2000 to $2.4 trillion in 2021.",
+        "Many developing countries leapfrogged fixed-line infrastructure by deploying 4G and 5G networks directly.",
+        "South Korea became the world's first country to deploy a nationwide 5G network in 2019."
+      ],
+      outlook: {
+        status: "At Risk",
+        text: "A $15 trillion infrastructure investment gap persists in developing countries. Manufacturing value-added in least developed countries has barely grown as a share of GDP. While digital connectivity expands rapidly, the quality of physical infrastructure — roads, ports, power grids — remains severely inadequate across much of Asia and sub-Saharan Africa. Only 1 in 4 people in sub-Saharan Africa has a reliable internet connection."
+      },
+      leaders: [
+        { name: "South Korea", detail: "Highest R&D spending as % of GDP; leads globally in 5G deployment, semiconductors, and green technology." },
+        { name: "Germany", detail: "Global leader in industrial automation, precision engineering, and the Industry 4.0 model." },
+        { name: "Japan", detail: "World's second-largest R&D spender; leads in robotics, electronics, and transportation innovation." },
+        { name: "Sweden", detail: "Top global innovation economy; birthplace of Ericsson, Spotify, and Klarna; strong startup ecosystem." },
+        { name: "United States", detail: "Largest overall R&D investment globally; home to the world's leading technology and innovation ecosystem." }
+      ]
+    }
   },
   {
     id: 10,
