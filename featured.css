@@ -88,8 +88,42 @@ hr {
 }
 
 /* #endregion */
+.tit {
+    background: linear-gradient(to right, #005bbd, #287950);
+    height: 250px;
+}
 
-/*
+.title {
+    text-align: center;
+    color: var(--color-white);
+    transform: translateY(70px);
+}
+.action-card1, .action-card2, .action-card3,
+.action-card4, .action-card5, .action-card6 {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--color-white);
+    transform: translateY(90px);
+    
+}
+
+.can-do {
+    margin-top: 70px;
+    text-align: center;
+}
+
 
 /* #region Footer */
 .footer {
