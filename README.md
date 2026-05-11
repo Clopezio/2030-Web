@@ -20,6 +20,11 @@ L'Agenda 2030 è un programma globale adottato dall'ONU nel 2015 che comprende 1
 
 Scaricare il file .zip dalla repository e aprire il file .html con un browser.
 
+## Include condivisi (navbar e footer)
+
+Navbar e footer sono stati centralizzati in `docs/navbar.html` e `docs/footer.html` e caricati nelle pagine tramite JavaScript (`fetch`).
+Per vedere correttamente gli include, avviare il progetto con un server locale (ad esempio `python -m http.server` nella cartella `docs`).
+
 ## Tecnologie
 
 - HTML

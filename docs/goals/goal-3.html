@@ -14,23 +14,7 @@
 <div class="layout" id="top">
 
     <!-- TOPBAR -->
-    <header class="topbar">
-        <a href="../index.html" class="topbar-left">
-            <div class="logocontainer">
-                <img src="../assets/logo.png" alt="logo">
-            </div>
-            <div class="titoletto">
-                <h1 class="navbar1">Agenda 2030</h1>
-                <h2 class="navbar2">Sustainable development goals</h2>
-            </div>
-        </a>
-
-        <nav class="navbar">
-            <a href="../index.html">Home</a>
-            <a href="../goals.html">Goals</a>
-            <a href="../featured.html">Featured</a>
-        </nav>
-    </header>
+    <div id="navbar"></div>
 
     <!-- HERO -->
     <div class="goal-hero">
@@ -154,50 +138,52 @@
 </div>
 
 <!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-columns">
-            <div class="footer-column">
-                <h4 class="footer-heading">About This Project</h4>
-                <ul class="footer-list">
-                    <p>A school project exploring the UN&#39;s Sustainable Development Goals and the 2030 Agenda</p>
-                    <p>Created for Magistri Cumacini Institute</p>
-                </ul>
-            </div>
-            <div class="footer-column footer-navigation">
-                <h4 class="footer-heading">Navigation</h4>
-                <ul class="footer-list">
-                    <p><a style="color: white;" href="../index.html">Home</a></p>
-                    <p><a style="color: white;" href="../goals.html">Goals</a></p>
-                    <p><a style="color: white;" href="../featured.html">Featured</a></p>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4 class="footer-heading">Learn More</h4>
-                <ul class="footer-list">
-                    <p><a style="color: white;" href="https://sdgs.un.org/" target="_blank">Official UN SDGs</a></p>
-                    <p><a style="color: white;" href="https://www.un.org/sustainabledevelopment/agenda2030/" target="_blank">2030 Agenda</a></p>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4 class="footer-heading">Credits</h4>
-                <ul class="footer-list">
-                    <p>Project by Umut, Klodian, and Illya</p>
-                    <p>Guided by Professor Eugenio Chiriaco</p>
-                </ul>
-            </div>
-        </div>
+<div id="footer"></div>
 
-        <div class="footer-bottom">
-            <div class="social-icons">
-                <a href="https://github.com/Clopezio/2030-Web" class="social-link" target="_blank">
-                    <img src="../assets/github.png" alt="GitHub Logo" class="social-icon">
-                </a>
-            </div>
-            <p class="footer-copyright">&#169; 2026 Agenda 2030 Project. MIT License.</p>
-        </div>
-    </div>
-</footer>
+<script>
+    function injectPartial(targetId, filePath, pathPrefix) {
+        fetch(filePath)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('HTTP ' + response.status);
+                }
 
+                return response.text();
+            })
+            .then(function(html) {
+                var target = document.getElementById(targetId);
+                if (!target) {
+                    return;
+                }
+
+                target.innerHTML = html;
+
+                if (pathPrefix) {
+                    target.querySelectorAll('[href], [src]').forEach(function(element) {
+                        var attribute = element.hasAttribute('href') ? 'href' : 'src';
+                        var value = element.getAttribute(attribute);
+
+                        if (!value || /^(?:[a-z]+:|\/|#)/i.test(value)) {
+                            return;
+                        }
+
+                        element.setAttribute(attribute, pathPrefix + value);
+                    });
+                }
+            })
+            .catch(function(error) {
+                console.error('Failed to load partial:', filePath, error);
+                var target = document.getElementById(targetId);
+                if (!target) {
+                    return;
+                }
+
+                target.innerHTML = '';
+            });
+    }
+
+    injectPartial('navbar', '../navbar.html', '../');
+    injectPartial('footer', '../footer.html', '../');
+</script>
 </body>
 </html>
