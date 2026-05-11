@@ -146,9 +146,19 @@
 <script>
     function injectPartial(targetId, filePath, pathPrefix) {
         fetch(filePath)
-            .then(function(response) { return response.text(); })
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('HTTP ' + response.status);
+                }
+
+                return response.text();
+            })
             .then(function(html) {
                 var target = document.getElementById(targetId);
+                if (!target) {
+                    return;
+                }
+
                 target.innerHTML = html;
 
                 if (pathPrefix) {
@@ -163,6 +173,15 @@
                         element.setAttribute(attribute, pathPrefix + value);
                     });
                 }
+            })
+            .catch(function(error) {
+                console.error('Failed to load partial:', filePath, error);
+                var target = document.getElementById(targetId);
+                if (!target) {
+                    return;
+                }
+
+                target.innerHTML = '';
             });
     }
 
