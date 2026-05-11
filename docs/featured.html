@@ -6,6 +6,7 @@
     <title>Agenda 2030 - Informative Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="featured.css">
+    <script src="lang.js"></script>
     <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
 </head>
 
@@ -143,50 +144,5 @@
 <div id="footer"></div>
     
 </div>
-<script>
-    function injectPartial(targetId, filePath, pathPrefix) {
-        fetch(filePath)
-            .then(function(response) {
-                if (!response.ok) {
-                    throw new Error('HTTP ' + response.status);
-                }
-
-                return response.text();
-            })
-            .then(function(html) {
-                var target = document.getElementById(targetId);
-                if (!target) {
-                    return;
-                }
-
-                target.innerHTML = html;
-
-                if (pathPrefix) {
-                    target.querySelectorAll('[href], [src]').forEach(function(element) {
-                        var attribute = element.hasAttribute('href') ? 'href' : 'src';
-                        var value = element.getAttribute(attribute);
-
-                        if (!value || /^(?:[a-z]+:|\/|#)/i.test(value)) {
-                            return;
-                        }
-
-                        element.setAttribute(attribute, pathPrefix + value);
-                    });
-                }
-            })
-            .catch(function(error) {
-                console.error('Failed to load partial:', filePath, error);
-                var target = document.getElementById(targetId);
-                if (!target) {
-                    return;
-                }
-
-                target.innerHTML = '';
-            });
-    }
-
-    injectPartial('navbar', 'navbar.html', '');
-    injectPartial('footer', 'footer.html', '');
-</script>
 </body>
 </html>
