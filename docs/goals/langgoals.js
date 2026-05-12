@@ -3,7 +3,7 @@ function setLanguage(lang) {
     document.querySelectorAll('.lang-en, [lang-en]').forEach(e => e.style.display = lang === 'en' ? '' : 'none');
     document.querySelectorAll('.lang-it, [lang-it]').forEach(e => e.style.display = lang === 'it' ? '' : 'none');
   let flag = document.getElementById('lang-flag');
-  if (flag) flag.src = lang === 'en' ? 'assets/uk.png' : 'assets/italia.png';
+  if (flag) flag.src = lang === 'en' ? '../assets/uk.png' : '../assets/italia.png';
   localStorage.setItem('site-lang', lang);
 }
 
