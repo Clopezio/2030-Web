@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SDG 5: Gender Equality &#8211; Agenda 2030</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../goal.css">
+    <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon">
+    <style>:root { --goal-color: #ff3a21; }</style>
+</head>
+
+<body>
+<div class="layout" id="top">
+
+    <!-- TOPBAR -->
+    <div id="navbar"></div>
+
+    <!-- HERO -->
+    <div class="goal-hero">
+        <div class="goal-badge">5</div>
+        <h1 class="goal-hero-title">Gender Equality</h1>
+        <p class="goal-hero-subtitle">Achieve gender equality and empower all women and girls</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <div class="goal-content">
+            <section class="goal-section">
+                <span class="section-title">Key Targets</span>
+                <ul class="targets-list">
+            <li>
+                <span class="target-number">1</span>
+                <span>End all forms of discrimination against all women and girls everywhere.</span>
+            </li>
+            <li>
+                <span class="target-number">2</span>
+                <span>Eliminate all forms of violence against all women and girls in the public and private spheres.</span>
+            </li>
+            <li>
+                <span class="target-number">3</span>
+                <span>Eliminate all harmful practices, such as child, early and forced marriage and female genital mutilation.</span>
+            </li>
+            <li>
+                <span class="target-number">4</span>
+                <span>Ensure women&#x27;s full and effective participation and equal opportunities for leadership at all levels.</span>
+            </li>
+            <li>
+                <span class="target-number">5</span>
+                <span>Ensure universal access to sexual and reproductive health and reproductive rights.</span>
+            </li>
+        </ul>
+            </section>
+
+            <section class="goal-section">
+                <span class="section-title">Key Facts</span>
+                <div class="facts-grid">
+            <div class="fact-card">1 in 3 women worldwide have experienced physical or sexual violence.</div>
+            <div class="fact-card">Women earn 20% less than men on average globally.</div>
+            <div class="fact-card">Women hold only 26% of parliamentary seats worldwide.</div>
+            <div class="fact-card">An estimated 650 million women alive today were married before age 18.</div>
+        </div>
+            </section>
+
+            <section class="goal-section">
+                <span class="section-title">Global Progress</span>
+                <div class="progress-block">
+                    <p class="progress-overview">Legal and educational progress on gender equality has been real and measurable since 2000. But deep structural barriers — in political representation, economic participation, and gender-based violence — persist worldwide, and the pace of change remains far too slow.</p>
+
+                    <div class="progress-subsection">
+                        <h3 class="progress-sub-title">What We&#39;ve Accomplished</h3>
+                        <ul class="progress-bullets">
+                    <li>Women&#x27;s share of parliamentary seats grew from 13% in 2000 to 26% by 2023.</li>
+                    <li>Maternal mortality declined by 34% between 2000 and 2020, saving hundreds of thousands of lives.</li>
+                    <li>Over 160 countries now have laws criminalising domestic violence.</li>
+                    <li>Gender parity in primary school enrollment has been largely achieved globally.</li>
+                    <li>Iceland became the first country to make equal pay mandatory through legislation in 2018.</li>
+                </ul>
+                    </div>
+
+                    <div class="progress-subsection">
+                        <h3 class="progress-sub-title">2030 Outlook</h3>
+                        <div class="outlook-box off-track">
+                            <span class="outlook-badge">Off Track</span>
+                            <p class="outlook-text">The World Economic Forum estimates full gender equality will take over 130 years at the current pace. Female labor force participation has barely changed since 1990, sitting at around 47% globally. Only 26 countries have achieved gender parity or better in their legislatures. Violence against women remains at epidemic levels — 1 in 3 women experience physical or sexual violence in their lifetime.</p>
+                        </div>
+                    </div>
+
+                    <div class="progress-subsection">
+                        <h3 class="progress-sub-title">Leading Nations</h3>
+                        <div class="leaders-grid">
+                <div class="leader-card">
+                    <span class="leader-name">Iceland</span>
+                    <span class="leader-detail">Ranked #1 for gender equality 14 years running by the WEF; first country to enforce equal pay through law.</span>
+                </div>
+                <div class="leader-card">
+                    <span class="leader-name">Rwanda</span>
+                    <span class="leader-detail">Leads the world in female parliamentary representation at 61% of seats — above any other nation.</span>
+                </div>
+                <div class="leader-card">
+                    <span class="leader-name">New Zealand</span>
+                    <span class="leader-detail">Led by a female prime minister for 6+ years; strong policies on equal pay and paid parental leave.</span>
+                </div>
+                <div class="leader-card">
+                    <span class="leader-name">Sweden</span>
+                    <span class="leader-detail">Pioneered feminist foreign policy; one of the world&#x27;s narrowest gender wage gaps.</span>
+                </div>
+                <div class="leader-card">
+                    <span class="leader-name">Finland</span>
+                    <span class="leader-detail">Elected the world&#x27;s youngest female prime minister; near-universal paid parental leave and childcare access.</span>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- PREV / NEXT NAV -->
+    <nav class="goal-nav" aria-label="Goal navigation">
+        <a class="goal-nav-btn" href="goal-4.html">
+            <span>&#8592;</span>
+            <span>
+                <span class="nav-label">Previous</span>
+                <span class="nav-title">SDG 4: Quality Education</span>
+            </span>
+        </a>
+        <span class="goal-nav-center">Goal 5 of 17</span>
+        <a class="goal-nav-btn" href="goal-6.html">
+            <span>
+                <span class="nav-label">Next</span>
+                <span class="nav-title">SDG 6: Clean Water and Sanitation</span>
+            </span>
+            <span>&#8594;</span>
+        </a>
+    </nav>
+
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script>
+    function injectPartial(targetId, filePath, pathPrefix) {
+        fetch(filePath)
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('HTTP ' + response.status);
+                }
+
+                return response.text();
+            })
+            .then(function(html) {
+                var target = document.getElementById(targetId);
+                if (!target) {
+                    return;
+                }
+
+                target.innerHTML = html;
+
+                if (pathPrefix) {
+                    target.querySelectorAll('[href], [src]').forEach(function(element) {
+                        var attribute = element.hasAttribute('href') ? 'href' : 'src';
+                        var value = element.getAttribute(attribute);
+
+                        if (!value || /^(?:[a-z]+:|\/|#)/i.test(value)) {
+                            return;
+                        }
+
+                        element.setAttribute(attribute, pathPrefix + value);
+                    });
+                }
+            })
+            .catch(function(error) {
+                console.error('Failed to load partial:', filePath, error);
+                var target = document.getElementById(targetId);
+                if (!target) {
+                    return;
+                }
+
+                target.innerHTML = '';
+            });
+    }
+
+    injectPartial('navbar', '../navbar.html', '../');
+    injectPartial('footer', '../footer.html', '../');
+</script>
+</body>
+</html>
