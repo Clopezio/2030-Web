@@ -190,6 +190,314 @@ hr {
 
 /* #endregion */
 
+/* #region Supporting Sections */
+.daily-actions,
+.for-organizations,
+.connected {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.daily-actions h3,
+.for-organizations h2,
+.connected h2 {
+    margin-bottom: 12px;
+}
+
+.daily-actions p,
+.for-organizations p,
+.connected p {
+    color: rgb(67, 67, 67);
+    line-height: 1.6;
+}
+
+.organizations-cards,
+.connected-cards {
+    display: grid;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.connected .button {
+    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #4e01d4;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 10px;
+}
+/* #endregion */
+
+/* #region Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-right: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 101;
+  position: relative;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background-color: var(--color-black);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.navbar.active {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 70%;
+  max-width: 300px;
+  height: 100vh;
+  background-color: white;
+  flex-direction: column;
+  gap: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 80px 20px 20px 20px;
+  box-shadow: -2px 0 12px rgba(0,0,0,0.15);
+  z-index: 100;
+  animation: slideInRight 0.3s ease-out;
+  overflow-y: auto;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+body.menu-open::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.navbar.active a {
+  display: block;
+  width: 100%;
+  padding: 16px 12px;
+  font-size: 17px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.navbar.active a:hover {
+  background-color: #f5f5f5;
+}
+
+.navbar.active #lang-flag {
+  margin-top: 15px;
+  padding: 12px;
+}
+/* #endregion */
+
+@media (max-width: 768px) {
+  .layout {
+    padding: 0 16px;
+  }
+
+  hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 100;
+    height: 60px;
+  }
+
+  .topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+  }
+
+  .titoletto {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .logocontainer img {
+    margin-left: 0;
+    width: 40px;
+  }
+
+  .goals-box {
+    height: auto;
+    padding: 60px 16px 50px;
+  }
+
+  .goals-img {
+    display: none;
+  }
+
+  .goals-header {
+    font-size: 28px;
+    margin-top: 0;
+  }
+
+  .goals-paragraph {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 4px;
+  }
+
+  .main-content {
+    margin-top: 40px;
+    text-align: left;
+  }
+
+  .can-title {
+    font-size: 26px;
+  }
+
+  .can-subtitle {
+    font-size: 14px;
+  }
+
+  .goals-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 0;
+    justify-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
+    padding: 16px;
+    height: auto;
+  }
+
+  .card-text {
+    font-size: 18px;
+    transform: translateX(12px);
+  }
+
+  .card-subtext {
+    font-size: 13px;
+    transform: translateX(12px);
+  }
+
+  .goals-number {
+    width: 44px;
+    height: 44px;
+    transform: none;
+  }
+
+  .daily-actions,
+  .for-organizations,
+  .connected {
+    margin: 30px auto;
+    padding: 0 16px;
+  }
+
+  .daily-actions p,
+  .for-organizations p,
+  .connected p {
+    font-size: 14px;
+  }
+
+  .connected .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer {
+    margin-top: 80px;
+    padding: 32px 16px;
+  }
+
+  .footer-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .footer-navigation {
+    transform: none;
+  }
+
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-heading {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  .footer-list p {
+    margin: 8px 0;
+    line-height: 1.4;
+  }
+
+  .social-icon {
+    width: 28px;
+  }
+
+  .footer-copyright {
+    font-size: 12px;
+  }
+}
 /* #region Footer */
 .footer {
   background-color: #1f2937;

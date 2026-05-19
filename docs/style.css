@@ -532,13 +532,7 @@ hr {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-.nav-menu {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-}
-
-.nav-menu.active {
+.navbar.active {
   position: fixed;
   right: 0;
   top: 0;
@@ -548,6 +542,8 @@ hr {
   background-color: white;
   flex-direction: column;
   gap: 0;
+  margin-right: 0;
+  margin-top: 0;
   padding: 80px 20px 20px 20px;
   box-shadow: -2px 0 12px rgba(0,0,0,0.15);
   z-index: 100;
@@ -579,14 +575,7 @@ body.menu-open::before {
   z-index: 99;
 }
 
-.nav-menu a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 16px;
-  padding: 10px;
-}
-
-.nav-menu.active a {
+.navbar.active a {
   display: block;
   width: 100%;
   padding: 16px 12px;
@@ -595,11 +584,11 @@ body.menu-open::before {
   transition: background-color 0.2s;
 }
 
-.nav-menu.active a:hover {
+.navbar.active a:hover {
   background-color: #f5f5f5;
 }
 
-.nav-menu.active #lang-flag {
+.navbar.active #lang-flag {
   margin-top: 15px;
   padding: 12px;
 }
@@ -662,25 +651,32 @@ body.menu-open::before {
 
   /* Hero */
   .textcrazy {
-    margin-top: -150px; 
-    padding: 0 16px;
+    margin-top: 0;
+    padding: 20px 16px 16px;
+    color: #111;
+    background: #f5f5f5;
+    border-radius: 12px;
   }
 
   .text1 {
-    transform: translateY(40px);
+    transform: none;
     font-size: 28px;
-    margin: 10px 0;
+    margin: 8px 0;
   }
 
   .text2 {
     font-size: 16px;
-    margin: 8px 0;
+    margin: 6px 0;
   }
 
   .text3 {
     font-size: 14px;
-    margin: 8px 0;
-    line-height: 1.4;
+    margin: 6px 0;
+    line-height: 1.5;
+  }
+
+  .text3 br {
+    display: none;
   }
 
   .worldcontainer img {
@@ -695,6 +691,7 @@ body.menu-open::before {
     padding: 0.7rem 1.4rem;
     padding-left: 20px;
     margin: 10px 0;
+    transform: none;
   }
 
   .button__icon-wrapper {
@@ -780,14 +777,10 @@ body.menu-open::before {
     margin: 0 auto;
   }
 
-  .info-img1, .info-img3 {
-    display: block;
-  }
-
-  .info-img2, .info-img4 {
-    margin-right: 0;
-    margin-left: 0;
-    display: block;
+  .info-img2,
+  .info-img3,
+  .info-img4 {
+    display: none;
   }
 
   /* Goals section */
@@ -803,6 +796,10 @@ body.menu-open::before {
   .goals-paragraph {
     font-size: 14px;
     transform: translateY(0);
+  }
+
+  .goals-paragraph br {
+    display: none;
   }
 
   /* Featured goals cards */
