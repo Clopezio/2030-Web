@@ -51,49 +51,145 @@ function setupMobileMenu() {
   });
 }
 
+const NAVBAR_FALLBACK = `
+<header class="topbar">
+    <a href="../index.html" class="topbar-left">
+        <div class="logocontainer">
+            <img src="../assets/logo.png" alt="logo">
+        </div>
+
+        <div class="titoletto">
+            <h1 class="navbar1">Agenda 2030</h1>
+            <h2 class="navbar2">Sustainable development goals</h2>
+        </div>
+    </a>
+
+    <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="navbar" id="primary-navigation" style="align-items: center;">
+        <a href="../index.html">Home</a>
+        <a href="../goals.html">Goals</a>
+        <a href="../featured.html">Featured</a>
+        <img id="lang-flag" src="../assets/uk.png" style="cursor:pointer;width:30px;">
+    </nav>
+</header>
+`;
+
+const FOOTER_FALLBACK = `
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h4 class="footer-heading lang-en">About This Project</h4>
+                <ul class="footer-list">
+                    <p>A school project exploring the UN's Sustainable Development Goals and the 2030 Agenda</p>
+                    <p>Created for Magistri Cumacini Institute</p>
+                </ul>
+            </div>
+            <div class="footer-column footer-navigation">
+                <h4 class="footer-heading">Navigation</h4>
+                <ul class="footer-list">
+                    <p><a style="color: white;" href="../index.html">Home</a></p>
+                    <p><a style="color: white;" href="../goals.html">Goals</a></p>
+                    <p><a style="color: white;" href="../featured.html">Featured</a></p>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Learn More</h4>
+                <ul class="footer-list">
+                    <p><a style="color: white;" href="https://sdgs.un.org/" target="_blank">Official UN SDGs</a></p>
+                    <p><a style="color: white;" href="https://www.un.org/sustainabledevelopment/agenda2030/" target="_blank">2030 Agenda</a></p>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Credits</h4>
+                <ul class="footer-list">
+                    <p>Project by Umut, Klodian, and Illya</p>
+                    <p>Guided by Professor Eugenio Chiriaco</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://github.com/Clopezio/2030-Web" class="social-link" target="_blank">
+                    <img src="../assets/github.png" alt="GitHub Logo" class="social-icon">
+                </a>
+            </div>
+            <p class="footer-copyright">© 2026 Agenda 2030 Project. MIT License.</p>
+        </div>
+    </div>
+</footer>
+`;
+
 document.addEventListener('DOMContentLoaded', function() {
 
   setupLangSwitcher();
 
-    function loadHTMLContent(elementId, filePath, callback) {
-       
-        loadWithXHR(filePath, function(content) {
-            injectHTML(elementId, content);
-            if (callback) callback();
-        });
+    function loadHTMLContent(elementId, filePath, callback, fallbackHtml) {
+        loadWithXHR(
+            filePath,
+            function(content) {
+                injectHTML(elementId, content);
+                if (callback) callback();
+            },
+            function() {
+                if (!fallbackHtml) return;
+                injectHTML(elementId, fallbackHtml);
+                if (callback) callback();
+            }
+        );
     }
 
-    function loadWithXHR(filePath, onSuccess) {
+    function loadWithXHR(filePath, onSuccess, onFailure) {
         var request = new XMLHttpRequest();
         request.open('GET', filePath, true);
 
-       
+        
         request.onload = function() {
             if (isSuccessStatus(request.status) && request.responseText) {
                 onSuccess(request.responseText);
+                return;
             }
+            var fallbackContent = loadSyncFallback(filePath);
+            if (fallbackContent) {
+                onSuccess(fallbackContent);
+                return;
+            }
+            console.warn('Async load failed for: ' + filePath + ' (status ' + request.status + ').');
+            if (onFailure) onFailure();
         };
 
         request.onerror = function() {
-            console.warn('Async load failed for: ' + filePath + ', trying sync fallback...');
-            loadSyncFallback(filePath, onSuccess);
+            var fallbackContent = loadSyncFallback(filePath);
+            if (fallbackContent) {
+                onSuccess(fallbackContent);
+                return;
+            }
+            console.warn('Async load failed for: ' + filePath + '.');
+            if (onFailure) onFailure();
         };
 
         request.send();
     }
 
-    function loadSyncFallback(filePath, onSuccess) {
+    function loadSyncFallback(filePath) {
         try {
             var request = new XMLHttpRequest();
             request.open('GET', filePath, false); 
             request.send();
             
-            if (request.responseText) {
-                onSuccess(request.responseText);
+            if (isSuccessStatus(request.status) && request.responseText) {
+                return request.responseText;
             }
         } catch(error) {
             console.error('Failed to load ' + filePath + ':', error);
         }
+        return null;
     }
 
     function isSuccessStatus(status) {
@@ -122,6 +218,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadHTMLContent('navbar', 'navbar.html', function() {
         setupLangSwitcher();
         setupMobileMenu();
-    });
-    loadHTMLContent('footer', 'footer.html', null);
+    }, NAVBAR_FALLBACK);
+    loadHTMLContent('footer', 'footer.html', null, FOOTER_FALLBACK);
 });
