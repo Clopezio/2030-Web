@@ -32,13 +32,12 @@ html, body {
   z-index: 10;
   background-color: var(--color-white);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 12px 32px;
 }
 
 .topbar-left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin-top: 0;
   cursor: pointer;
   text-decoration: none;
@@ -47,10 +46,9 @@ html, body {
 
 .navbar {
   display: flex;
-  gap: 24px;
+  gap: 25px;
   font-size: 16px;
-  align-items: center;
-  margin-right: 0;
+  margin-right: 350px;
   margin-top: 0;
 }
 
@@ -60,20 +58,25 @@ html, body {
 }
 
 .navbar1 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .navbar2 {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: normal;
-  margin: -2px 0 0;
+  margin-top: -8px;
 }
 
 .logocontainer img {
-  width: 52px;
+  width: 59px;
   height: auto;
+  margin-left: 350px;
+}
+
+.lang-flag {
+  cursor: pointer;
+  width: 40px;
 }
 
 /* Hero */
@@ -364,12 +367,34 @@ body.menu-open::before {
 
 @media (max-width: 768px) {
   .layout {
-    padding: 0 16px;
+    padding: 0;
+    width: 100%;
   }
 
   .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 12px 16px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 100;
     height: 60px;
+    width: 100%;
+  }
+
+  .lang-flag {
+    cursor: pointer;
+    width: 60px;
+  }
+
+  .topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
   }
 
   .titoletto {
@@ -389,6 +414,7 @@ body.menu-open::before {
   }
 
   .logocontainer img {
+    margin-left: 0;
     width: 40px;
   }
 
