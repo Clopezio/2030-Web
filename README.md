@@ -18,7 +18,7 @@ L'Agenda 2030 è un programma globale adottato dall'ONU nel 2015 che comprende 1
 
 ## Installazione
 
-Scaricare il file .zip dalla repository e aprire il file .html con un browser.
+Scaricare il file .zip dalla repository, navigare nella cartella docs e aprire il file index.html con un browser.
 
 ## Include condivisi (navbar e footer)
 
