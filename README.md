@@ -36,8 +36,6 @@ Per vedere correttamente gli include, avviare il progetto con un server locale (
 _Ringraziamenti a chi ha lavorato sul progetto_
 
 * [Umut Hastan](https://github.com/Clopezio) 
-* [Klodian Nivokazi](https://github.com/Bold2008) 
-* [Illya Ivaskevych](https://github.com/Wolf172jk)
 
 ## Licenza
 
